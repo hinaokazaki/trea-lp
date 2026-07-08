@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type Variant = "primary" | "line" | "instagram" | "ghost";
+type Variant = "primary" | "line" | "instagram" | "ghost" | "solid";
 
 type Props = {
   href?: string;
@@ -19,6 +19,8 @@ const styles: Record<Variant, string> = {
     "inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#833AB4] text-[#833AB4] bg-[#faf0ff] hover:bg-[#eed9ff] transition-colors",
   ghost:
     "inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm border border-stone-300 text-stone-500 bg-transparent hover:bg-stone-100 transition-colors",
+  solid:
+    "inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium text-white bg-[#4A4468] hover:bg-[#3B3654] transition-colors",
 };
 
 export default function Button({
