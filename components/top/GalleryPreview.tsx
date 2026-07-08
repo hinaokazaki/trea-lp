@@ -10,15 +10,15 @@ const previewImages = [
 
 export default function GalleryPreview() {
   return (
-    <section className="w-full border-b border-stone-200">
+    <section className="w-full border-b border-[#E4E2EE] bg-[#F6F5F9]">
       <div className="max-w-5xl mx-auto px-6 py-10">
         <div className="flex justify-between items-baseline mb-4">
-          <p className="font-serif text-base font-medium text-stone-800">
+          <p className="font-serif text-base font-medium text-[#312F55]">
             デザインギャラリー
           </p>
           <Link
             href="/gallery"
-            className="text-xs text-[#993556] hover:underline"
+            className="text-xs text-[#5D5786] hover:underline"
           >
             すべて見る →
           </Link>
@@ -28,7 +28,7 @@ export default function GalleryPreview() {
           {previewImages.map((img) => (
             <div
               key={img.src}
-              className="relative aspect-square rounded-lg overflow-hidden bg-stone-100"
+              className="relative aspect-square rounded-lg overflow-hidden bg-[#EDEBF4]"
             >
               <Image
                 src={img.src}
@@ -42,16 +42,21 @@ export default function GalleryPreview() {
         </div>
 
         <div className="flex flex-wrap gap-2 mt-4">
-          {["ワンカラー", "シンプルアート", "ニュアンス", "フレンチ", "春・夏", "秋・冬"].map(
-            (tag) => (
-              <span
-                key={tag}
-                className="text-[11px] px-3 py-1 rounded-full border border-stone-200 text-stone-500"
-              >
-                {tag}
-              </span>
-            )
-          )}
+          {[
+            "ワンカラー",
+            "シンプルアート",
+            "ニュアンス",
+            "フレンチ",
+            "春・夏",
+            "秋・冬",
+          ].map((tag) => (
+            <span
+              key={tag}
+              className="text-[11px] px-3 py-1 rounded-full border border-[#E4E2EE] text-[#6B6880]"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
       </div>
     </section>

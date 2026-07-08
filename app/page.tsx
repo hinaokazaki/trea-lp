@@ -21,21 +21,21 @@ export default function TopPage() {
       <MenuPreview />
 
       {/* こんな方におすすめ */}
-      <section className="w-full bg-stone-50 border-b border-stone-200">
+      {/* <section className="w-full bg-[#F6F5F9] border-b border-[#E4E2EE]">
         <div className="max-w-5xl mx-auto px-6 py-10">
-          <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-5">
+          <p className="text-[11px] font-medium text-[#8D8AA0] tracking-[.1em] uppercase mb-5">
             こんな方におすすめ
           </p>
           <div className="flex flex-col gap-3 max-w-lg">
             {recommendedFor.map((text) => (
-              <div key={text} className="flex items-center gap-3 text-sm text-stone-700">
-                <Check size={16} className="text-[#993556] shrink-0" />
+              <div key={text} className="flex items-center gap-3 text-sm text-[#454263]">
+                <Check size={16} className="text-[#5D5786] shrink-0" />
                 {text}
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <CtaBanner
         variant="feature"
