@@ -11,7 +11,7 @@ export default function FaqPage() {
           <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
             ✦ FAQ
           </p>
-          <h1 className="text-2xl font-medium text-stone-800 mb-4">
+          <h1 className="font-serif text-2xl font-medium text-stone-800 mb-4">
             よくあるご質問
           </h1>
           <p className="text-sm text-stone-500 leading-[1.8]">
@@ -34,7 +34,7 @@ export default function FaqPage() {
       <section className="w-full border-t border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
         <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <p className="text-lg font-medium text-stone-800 mb-1.5">
+            <p className="font-serif text-lg font-medium text-stone-800 mb-1.5">
               解決しない場合は、お気軽にご連絡ください
             </p>
             <p className="text-sm text-stone-500">

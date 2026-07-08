@@ -8,7 +8,7 @@ export default function FaqCategorySection({ category, firstOpen }: Props) {
     <div className="mb-8">
       <div className="flex items-center gap-2 mb-3">
         <span>{category.icon}</span>
-        <span className="text-base font-medium text-stone-800">
+        <span className="font-serif text-base font-medium text-stone-800">
           {category.name}
         </span>
       </div>
