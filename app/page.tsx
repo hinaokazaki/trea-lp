@@ -21,21 +21,24 @@ export default function TopPage() {
       <MenuPreview />
 
       {/* こんな方におすすめ */}
-      <section className="py-10 px-6 bg-stone-50 border-b border-stone-200">
-        <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-5">
-          こんな方におすすめ
-        </p>
-        <div className="flex flex-col gap-3 max-w-lg">
-          {recommendedFor.map((text) => (
-            <div key={text} className="flex items-center gap-3 text-sm text-stone-700">
-              <Check size={16} className="text-[#993556] shrink-0" />
-              {text}
-            </div>
-          ))}
+      <section className="w-full bg-stone-50 border-b border-stone-200">
+        <div className="max-w-5xl mx-auto px-6 py-10">
+          <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-5">
+            こんな方におすすめ
+          </p>
+          <div className="flex flex-col gap-3 max-w-lg">
+            {recommendedFor.map((text) => (
+              <div key={text} className="flex items-center gap-3 text-sm text-stone-700">
+                <Check size={16} className="text-[#993556] shrink-0" />
+                {text}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       <CtaBanner
+        variant="feature"
         title="毎日頑張るあなたへ、ネイルでちょっとご褒美を"
         description="ご予約はLINEまたはInstagramのDMからお気軽にどうぞ"
         primaryLabel="ご予約はこちら"
