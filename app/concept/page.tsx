@@ -28,20 +28,22 @@ export default function ConceptPage() {
   return (
     <>
       {/* Page header */}
-      <div className="bg-[#FBEAF0] px-8 py-10 border-b border-[#F4C0D1]">
-        <p className="text-[11px] text-[#993556] tracking-[.12em] mb-4 font-medium">
-          ✦ CONCEPT
-        </p>
-        <h1 className="text-2xl font-medium leading-[1.65] text-[#72243E] mb-4">
-          ネイルを見た瞬間、
-          <br />
-          ふっと心が軽くなる時間へ。
-        </h1>
-        <p className="text-sm text-[#993556] leading-[1.9] max-w-xl">
-          毎日家事や育児、お仕事を頑張っているあなたへ。
-          <br />
-          TRE&apos;Aは、&ldquo;ご褒美&rdquo;を意味する「treat」から生まれたサロンです。
-        </p>
+      <div className="w-full bg-[#FBEAF0] border-b border-[#F4C0D1]">
+        <div className="max-w-5xl mx-auto px-6 py-10">
+          <p className="text-[11px] text-[#993556] tracking-[.12em] mb-4 font-medium">
+            ✦ CONCEPT
+          </p>
+          <h1 className="text-2xl font-medium leading-[1.65] text-[#72243E] mb-4">
+            ネイルを見た瞬間、
+            <br />
+            ふっと心が軽くなる時間へ。
+          </h1>
+          <p className="text-sm text-[#993556] leading-[1.9] max-w-xl">
+            毎日家事や育児、お仕事を頑張っているあなたへ。
+            <br />
+            TRE&apos;Aは、&ldquo;ご褒美&rdquo;を意味する「treat」から生まれたサロンです。
+          </p>
+        </div>
       </div>
 
       {/* Salon thought */}
