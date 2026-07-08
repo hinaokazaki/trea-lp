@@ -67,25 +67,27 @@ export default async function GalleryPage() {
   return (
     <>
       {/* Page header */}
-      <div className="px-8 py-10 border-b border-stone-200">
-        <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-3">
-          GALLERY
-        </p>
-        <h1 className="text-xl font-medium text-stone-800 mb-3">
-          デザインギャラリー
-        </h1>
-        <p className="text-sm text-stone-500 leading-[1.85]">
-          短い爪・小さい爪でも可愛く仕上げた実例をご紹介します。
-          <br />
-          気になるデザインはご予約時の参考画像としてお送りください。
-        </p>
+      <div className="w-full border-b border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+        <div className="max-w-5xl mx-auto px-6 py-14">
+          <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
+            ✦ GALLERY
+          </p>
+          <h1 className="text-2xl font-medium text-stone-800 mb-4">
+            デザインギャラリー
+          </h1>
+          <p className="text-sm text-stone-500 leading-[1.85]">
+            短い爪・小さい爪でも可愛く仕上げた実例をご紹介します。
+            <br />
+            気になるデザインはご予約時の参考画像としてお送りください。
+          </p>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto w-full">
         <GalleryClient items={items} />
 
         {/* Instagram */}
-        <section className="px-6 py-8 bg-stone-50 border-y border-stone-200 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <section className="px-6 py-8 bg-[#F5F1FA] border-y border-[#EADFF3] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <p className="text-sm font-medium text-stone-800 mb-1.5">
               最新のデザインはInstagramで随時更新中
