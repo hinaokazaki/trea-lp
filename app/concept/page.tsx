@@ -33,7 +33,7 @@ export default function ConceptPage() {
           <p className="text-[11px] text-[#993556] tracking-[.12em] mb-4 font-medium">
             ✦ CONCEPT
           </p>
-          <h1 className="text-2xl font-medium leading-[1.65] text-[#72243E] mb-4">
+          <h1 className="font-serif text-2xl font-medium leading-[1.65] text-[#72243E] mb-4">
             ネイルを見た瞬間、
             <br />
             ふっと心が軽くなる時間へ。
@@ -62,7 +62,7 @@ export default function ConceptPage() {
                 className="px-5 py-5 border border-[#F4C0D1] rounded-xl bg-[#FBEAF0]"
               >
                 <p className="text-xl mb-3">{v.icon}</p>
-                <p className="text-sm font-medium text-[#72243E] mb-2">
+                <p className="font-serif text-sm font-medium text-[#72243E] mb-2">
                   {v.title}
                 </p>
                 <p className="text-xs text-[#993556] leading-[1.75]">

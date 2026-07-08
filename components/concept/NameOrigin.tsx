@@ -6,7 +6,7 @@ export default function NameOrigin() {
       </p>
       <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
         <div className="text-center shrink-0 px-8 py-6 border border-[#F4C0D1] rounded-xl bg-[#FBEAF0]">
-          <p className="text-3xl font-medium tracking-[.14em] text-[#72243E]">
+          <p className="font-serif text-3xl font-medium tracking-[.14em] text-[#72243E]">
             TRE&apos;A
           </p>
           <p className="text-[11px] text-[#993556] tracking-[.08em] mt-1">
