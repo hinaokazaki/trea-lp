@@ -36,23 +36,25 @@ export default function ReservationPage() {
   return (
     <>
       {/* Page header */}
-      <div className="px-8 py-10 border-b border-stone-200">
-        <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-3">
-          RESERVATION
-        </p>
-        <h1 className="text-xl font-medium text-stone-800 mb-3">ご予約</h1>
-        <p className="text-sm text-stone-500 leading-[1.85]">
-          LINEまたはInstagramのDMからご予約いただけます。
-          <br />
-          ご予約前に必ず{" "}
-          <Link href="/faq" className="text-[#993556] underline">
-            FAQ（注意事項）
-          </Link>{" "}
-          をお読みください。
-        </p>
+      <div className="w-full border-b border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+        <div className="max-w-5xl mx-auto px-6 py-14">
+          <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
+            ✦ RESERVATION
+          </p>
+          <h1 className="text-2xl font-medium text-stone-800 mb-4">ご予約</h1>
+          <p className="text-sm text-stone-500 leading-[1.85]">
+            LINEまたはInstagramのDMからご予約いただけます。
+            <br />
+            ご予約前に必ず{" "}
+            <Link href="/faq" className="text-[#993556] underline">
+              FAQ（注意事項）
+            </Link>{" "}
+            をお読みください。
+          </p>
+        </div>
       </div>
 
-      <div className="max-w-4xl mx-auto w-full px-6 py-8">
+      <div className="max-w-5xl mx-auto w-full px-6 py-8">
         {/* Warning banner */}
         <div className="bg-[#fff8f0] border border-[#f5c97a] rounded-xl px-5 py-4 flex gap-4 items-start mb-8">
           <span className="text-xl shrink-0">⚠️</span>
@@ -155,9 +157,12 @@ export default function ReservationPage() {
 
         {/* After confirmation flow */}
         <section className="border-t border-stone-200 pt-8 mb-10">
-          <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-5">
-            ご予約確定後の流れ
-          </p>
+          <div className="flex items-center gap-2 mb-5">
+            <span className="text-[#993556]">✦</span>
+            <span className="text-sm font-medium text-stone-800">
+              ご予約確定後の流れ
+            </span>
+          </div>
           <div className="flex flex-col gap-5">
             {afterSteps.map((step, i) => (
               <div key={i} className="flex gap-4 items-start">
@@ -183,9 +188,12 @@ export default function ReservationPage() {
 
         {/* Other notes */}
         <section className="border-t border-stone-200 pt-8">
-          <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-4">
-            その他ご注意
-          </p>
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-[#993556]">✦</span>
+            <span className="text-sm font-medium text-stone-800">
+              その他ご注意
+            </span>
+          </div>
           <div className="flex flex-col gap-3">
             {otherNotes.map((note, i) => (
               <div key={i} className="flex gap-3 text-xs text-stone-500 leading-[1.75]">
@@ -198,27 +206,29 @@ export default function ReservationPage() {
       </div>
 
       {/* Bottom CTA */}
-      <section className="py-10 px-6 text-center border-t border-stone-200">
-        <p className="text-sm font-medium text-stone-800 mb-5">
-          皆さまにお会いできる日を楽しみにしております 😌
-        </p>
-        <div className="flex gap-3 justify-center flex-wrap">
-          <a
-            href="https://lin.ee/RnMcmQl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#06C755] text-[#06C755] bg-[#f0fbf2] hover:bg-[#d0f0d8] transition-colors"
-          >
-            LINEで予約
-          </a>
-          <a
-            href="https://www.instagram.com/trea_nails_/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#833AB4] text-[#833AB4] bg-[#faf0ff] hover:bg-[#eed9ff] transition-colors"
-          >
-            Instagramから予約
-          </a>
+      <section className="w-full border-t border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+        <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <p className="text-lg font-medium text-stone-800">
+            皆さまにお会いできる日を楽しみにしております 😌
+          </p>
+          <div className="flex gap-3 flex-wrap shrink-0">
+            <a
+              href="https://lin.ee/RnMcmQl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#06C755] text-[#06C755] bg-[#f0fbf2] hover:bg-[#d0f0d8] transition-colors"
+            >
+              LINEで予約
+            </a>
+            <a
+              href="https://www.instagram.com/trea_nails_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#833AB4] text-[#833AB4] bg-[#faf0ff] hover:bg-[#eed9ff] transition-colors"
+            >
+              Instagramから予約
+            </a>
+          </div>
         </div>
       </section>
     </>
