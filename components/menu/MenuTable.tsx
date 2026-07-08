@@ -3,26 +3,24 @@ import { Clock } from "lucide-react";
 
 export default function MenuTable() {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-8">
       {menuCategories.map((cat) => (
-        <div
-          key={cat.id}
-          className="border border-stone-200 rounded-xl overflow-hidden"
-        >
+        <div key={cat.id}>
           {/* Category header */}
-          <div className="px-5 py-3.5 bg-[#FBEAF0] border-b border-[#F4C0D1] flex items-center gap-2">
-            <span className="text-sm font-medium text-[#72243E]">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-[#993556]">✦</span>
+            <span className="text-sm font-medium text-stone-800">
               {cat.name}
             </span>
             {cat.badge && (
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-white border border-[#F4C0D1] text-[#993556]">
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#FBEAF0] border border-[#F4C0D1] text-[#993556]">
                 {cat.badge}
               </span>
             )}
           </div>
 
           {/* Items */}
-          <div className="divide-y divide-stone-100 px-5">
+          <div className="divide-y divide-stone-100 px-5 bg-white rounded-xl shadow-sm">
             {cat.items.map((item, i) => (
               <div
                 key={i}
