@@ -26,7 +26,7 @@ export default function Features() {
     <section className="w-full border-b border-stone-200 bg-stone-50">
       <div className="max-w-5xl mx-auto px-6 py-14">
         <div className="flex flex-col items-center mb-8">
-          <p className="text-base font-medium text-stone-800">
+          <p className="font-serif text-base font-medium text-stone-800">
             TRE&apos;A NAILS について
           </p>
           <span className="w-8 h-px bg-[#D4537E] mt-3" />
@@ -40,7 +40,7 @@ export default function Features() {
               <div className="w-14 h-14 rounded-full bg-[#FBEAF0] flex items-center justify-center text-[#993556] shrink-0">
                 {f.icon}
               </div>
-              <p className="text-sm font-medium text-stone-800">{f.title}</p>
+              <p className="font-serif text-sm font-medium text-stone-800">{f.title}</p>
               <p className="text-xs text-stone-500 leading-[1.75]">
                 {f.description}
               </p>

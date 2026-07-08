@@ -13,7 +13,7 @@ export default function GalleryPreview() {
     <section className="w-full border-b border-stone-200">
       <div className="max-w-5xl mx-auto px-6 py-10">
         <div className="flex justify-between items-baseline mb-4">
-          <p className="text-base font-medium text-stone-800">
+          <p className="font-serif text-base font-medium text-stone-800">
             デザインギャラリー
           </p>
           <Link

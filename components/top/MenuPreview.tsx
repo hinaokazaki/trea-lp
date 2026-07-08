@@ -6,7 +6,7 @@ export default function MenuPreview() {
     <section className="w-full border-b border-stone-200">
       <div className="max-w-5xl mx-auto px-6 py-10">
         <div className="flex justify-between items-baseline mb-4">
-          <p className="text-base font-medium text-stone-800">
+          <p className="font-serif text-base font-medium text-stone-800">
             メニュー・料金（一部）
           </p>
           <Link
@@ -23,7 +23,7 @@ export default function MenuPreview() {
               className="flex justify-between items-center px-4 py-3 border border-stone-200 rounded-lg"
             >
               <span className="text-sm text-stone-800">{item.name}</span>
-              <span className="text-sm font-medium text-[#993556]">
+              <span className="font-serif text-sm font-medium text-[#993556]">
                 {item.price}
               </span>
             </div>
