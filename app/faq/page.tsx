@@ -6,15 +6,15 @@ export default function FaqPage() {
   return (
     <>
       {/* Page header */}
-      <div className="w-full border-b border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+      <div className="w-full border-b border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
         <div className="max-w-5xl mx-auto px-6 py-14">
-          <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
+          <p className="text-[11px] font-medium text-[#5D5786] tracking-[.12em] mb-4">
             ✦ FAQ
           </p>
-          <h1 className="font-serif text-2xl font-medium text-stone-800 mb-4">
+          <h1 className="font-serif text-2xl font-medium text-[#312F55] mb-4">
             よくあるご質問
           </h1>
-          <p className="text-sm text-stone-500 leading-[1.8]">
+          <p className="text-sm text-[#6B6880] leading-[1.8]">
             ご予約前にぜひご一読ください。解決しない場合はLINEからお気軽にご相談ください。
           </p>
         </div>
@@ -31,13 +31,13 @@ export default function FaqPage() {
       </div>
 
       {/* Bottom CTA */}
-      <section className="w-full border-t border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+      <section className="w-full border-t border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
         <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <p className="font-serif text-lg font-medium text-stone-800 mb-1.5">
+            <p className="font-serif text-lg font-medium text-[#312F55] mb-1.5">
               解決しない場合は、お気軽にご連絡ください
             </p>
-            <p className="text-sm text-stone-500">
+            <p className="text-sm text-[#6B6880]">
               LINEでのご質問・ご相談も大歓迎です
             </p>
           </div>
