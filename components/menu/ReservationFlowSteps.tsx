@@ -44,7 +44,7 @@ export default function ReservationFlowSteps() {
             {String(i + 1).padStart(2, "0")}
           </span>
           <step.icon size={22} className="text-[#993556] mb-1" />
-          <p className="text-sm font-medium text-stone-800">{step.title}</p>
+          <p className="font-serif text-sm font-medium text-stone-800">{step.title}</p>
           <p className="text-xs text-stone-500 leading-[1.75]">
             {step.description}
           </p>

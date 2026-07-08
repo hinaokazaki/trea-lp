@@ -17,7 +17,7 @@ export default function MenuPage() {
           <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
             ✦ MENU &amp; PRICE
           </p>
-          <h1 className="text-2xl font-medium text-stone-800 mb-4">
+          <h1 className="font-serif text-2xl font-medium text-stone-800 mb-4">
             メニュー・料金
           </h1>
           <p className="text-sm text-stone-500 leading-[1.8]">
@@ -36,7 +36,7 @@ export default function MenuPage() {
         <section className="mt-10">
           <div className="flex items-center gap-2 mb-5">
             <span className="text-[#993556]">✦</span>
-            <span className="text-sm font-medium text-stone-800">
+            <span className="font-serif text-sm font-medium text-stone-800">
               ご予約の流れ
             </span>
           </div>
@@ -49,7 +49,7 @@ export default function MenuPage() {
         <div className="max-w-5xl mx-auto px-6 py-10">
           <div className="flex items-center gap-2 mb-4">
             <span className="text-[#993556]">✦</span>
-            <span className="text-sm font-medium text-stone-800">
+            <span className="font-serif text-sm font-medium text-stone-800">
               ご来店前にご確認ください
             </span>
           </div>

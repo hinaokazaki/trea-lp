@@ -9,7 +9,7 @@ export default function MenuTable() {
           {/* Category header */}
           <div className="flex items-center gap-2 mb-3">
             <span className="text-[#993556]">✦</span>
-            <span className="text-sm font-medium text-stone-800">
+            <span className="font-serif text-sm font-medium text-stone-800">
               {cat.name}
             </span>
             {cat.badge && (
@@ -35,7 +35,7 @@ export default function MenuTable() {
                   )}
                 </div>
                 <div className="text-right shrink-0">
-                  <p className="text-sm font-medium text-[#993556]">
+                  <p className="font-serif text-sm font-medium text-[#993556]">
                     {item.price}
                   </p>
                   {item.duration && (
