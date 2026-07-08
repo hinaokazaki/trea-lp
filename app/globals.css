@@ -8,8 +8,13 @@
   --rose-dark: #72243E;
 }
 
+@theme inline {
+  --font-sans: var(--font-noto-sans-jp), "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  --font-serif: var(--font-noto-serif-jp), "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
 body {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-family: var(--font-sans);
   color: #1c1917;
   background: #ffffff;
   -webkit-font-smoothing: antialiased;

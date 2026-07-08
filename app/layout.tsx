@@ -1,7 +1,22 @@
 import type { Metadata } from "next";
+import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-noto-sans-jp",
+  display: "swap",
+});
+
+const notoSerifJP = Noto_Serif_JP({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-noto-serif-jp",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "TRE'A nails | プライベートネイルサロン",
@@ -13,7 +28,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ja" className="h-full">
+    <html
+      lang="ja"
+      className={`h-full ${notoSansJP.variable} ${notoSerifJP.variable}`}
+    >
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
