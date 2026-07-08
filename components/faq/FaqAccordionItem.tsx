@@ -18,7 +18,7 @@ export default function FaqAccordionItem({
 
   return (
     <div
-      className={`border rounded-lg overflow-hidden mb-2 ${
+      className={`border rounded-xl overflow-hidden mb-2 ${
         open ? "border-[#F4C0D1]" : "border-stone-200"
       }`}
     >

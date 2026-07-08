@@ -6,19 +6,21 @@ export default function FaqPage() {
   return (
     <>
       {/* Page header */}
-      <div className="px-8 py-10 border-b border-stone-200">
-        <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-3">
-          FAQ
-        </p>
-        <h1 className="text-xl font-medium text-stone-800 mb-3">
-          よくあるご質問
-        </h1>
-        <p className="text-sm text-stone-500 leading-[1.8]">
-          ご予約前にぜひご一読ください。解決しない場合はLINEからお気軽にご相談ください。
-        </p>
+      <div className="w-full border-b border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+        <div className="max-w-5xl mx-auto px-6 py-14">
+          <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
+            ✦ FAQ
+          </p>
+          <h1 className="text-2xl font-medium text-stone-800 mb-4">
+            よくあるご質問
+          </h1>
+          <p className="text-sm text-stone-500 leading-[1.8]">
+            ご予約前にぜひご一読ください。解決しない場合はLINEからお気軽にご相談ください。
+          </p>
+        </div>
       </div>
 
-      <div className="max-w-3xl mx-auto w-full px-6 py-8">
+      <div className="max-w-5xl mx-auto w-full px-6 py-8">
         {faqCategories.map((cat, i) => (
           <FaqCategorySection
             key={cat.id}
@@ -29,22 +31,26 @@ export default function FaqPage() {
       </div>
 
       {/* Bottom CTA */}
-      <section className="py-10 px-6 bg-stone-50 border-t border-stone-200 text-center">
-        <p className="text-sm font-medium text-stone-800 mb-2">
-          解決しない場合は、お気軽にご連絡ください
-        </p>
-        <p className="text-xs text-stone-500 mb-6">
-          LINEでのご質問・ご相談も大歓迎です
-        </p>
-        <div className="flex gap-3 justify-center flex-wrap">
-          <Button
-            href="https://lin.ee/RnMcmQl"
-            variant="line"
-            external
-          >
-            LINEで質問する
-          </Button>
-          <Button href="/reservation">ご予約はこちら</Button>
+      <section className="w-full border-t border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+        <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <p className="text-lg font-medium text-stone-800 mb-1.5">
+              解決しない場合は、お気軽にご連絡ください
+            </p>
+            <p className="text-sm text-stone-500">
+              LINEでのご質問・ご相談も大歓迎です
+            </p>
+          </div>
+          <div className="flex gap-3 flex-wrap shrink-0">
+            <Button
+              href="https://lin.ee/RnMcmQl"
+              variant="line"
+              external
+            >
+              LINEで質問する
+            </Button>
+            <Button href="/reservation">ご予約はこちら</Button>
+          </div>
         </div>
       </section>
     </>
