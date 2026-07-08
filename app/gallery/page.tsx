@@ -72,7 +72,7 @@ export default async function GalleryPage() {
           <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
             ✦ GALLERY
           </p>
-          <h1 className="text-2xl font-medium text-stone-800 mb-4">
+          <h1 className="font-serif text-2xl font-medium text-stone-800 mb-4">
             デザインギャラリー
           </h1>
           <p className="text-sm text-stone-500 leading-[1.85]">
@@ -89,7 +89,7 @@ export default async function GalleryPage() {
         {/* Instagram */}
         <section className="px-6 py-8 bg-[#F5F1FA] border-y border-[#EADFF3] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <p className="text-sm font-medium text-stone-800 mb-1.5">
+            <p className="font-serif text-sm font-medium text-stone-800 mb-1.5">
               最新のデザインはInstagramで随時更新中
             </p>
             <p className="text-xs text-stone-500 leading-[1.75]">
