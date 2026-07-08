@@ -67,15 +67,15 @@ export default async function GalleryPage() {
   return (
     <>
       {/* Page header */}
-      <div className="w-full border-b border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+      <div className="w-full border-b border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
         <div className="max-w-5xl mx-auto px-6 py-14">
-          <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
+          <p className="text-[11px] font-medium text-[#5D5786] tracking-[.12em] mb-4">
             ✦ GALLERY
           </p>
-          <h1 className="font-serif text-2xl font-medium text-stone-800 mb-4">
+          <h1 className="font-serif text-2xl font-medium text-[#312F55] mb-4">
             デザインギャラリー
           </h1>
-          <p className="text-sm text-stone-500 leading-[1.85]">
+          <p className="text-sm text-[#6B6880] leading-[1.85]">
             短い爪・小さい爪でも可愛く仕上げた実例をご紹介します。
             <br />
             気になるデザインはご予約時の参考画像としてお送りください。
@@ -89,10 +89,10 @@ export default async function GalleryPage() {
         {/* Instagram */}
         <section className="px-6 py-8 bg-[#F5F1FA] border-y border-[#EADFF3] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <p className="font-serif text-sm font-medium text-stone-800 mb-1.5">
+            <p className="font-serif text-sm font-medium text-[#312F55] mb-1.5">
               最新のデザインはInstagramで随時更新中
             </p>
-            <p className="text-xs text-stone-500 leading-[1.75]">
+            <p className="text-xs text-[#6B6880] leading-[1.75]">
               営業日のお知らせもInstagramのハイライトでご確認いただけます。
               <br />
               フォローしていただけると最新情報をお届けします。
