@@ -41,7 +41,7 @@ export default function ReservationPage() {
           <p className="text-[11px] font-medium text-[#993556] tracking-[.12em] mb-4">
             ✦ RESERVATION
           </p>
-          <h1 className="text-2xl font-medium text-stone-800 mb-4">ご予約</h1>
+          <h1 className="font-serif text-2xl font-medium text-stone-800 mb-4">ご予約</h1>
           <p className="text-sm text-stone-500 leading-[1.85]">
             LINEまたはInstagramのDMからご予約いただけます。
             <br />
@@ -159,7 +159,7 @@ export default function ReservationPage() {
         <section className="border-t border-stone-200 pt-8 mb-10">
           <div className="flex items-center gap-2 mb-5">
             <span className="text-[#993556]">✦</span>
-            <span className="text-sm font-medium text-stone-800">
+            <span className="font-serif text-sm font-medium text-stone-800">
               ご予約確定後の流れ
             </span>
           </div>
@@ -170,7 +170,7 @@ export default function ReservationPage() {
                   {i + 1}
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-stone-800">
+                  <p className="font-serif text-sm font-medium text-stone-800">
                     {step.title}
                   </p>
                   <div className="text-xs text-stone-500 mt-1 leading-[1.75]">
@@ -190,7 +190,7 @@ export default function ReservationPage() {
         <section className="border-t border-stone-200 pt-8">
           <div className="flex items-center gap-2 mb-4">
             <span className="text-[#993556]">✦</span>
-            <span className="text-sm font-medium text-stone-800">
+            <span className="font-serif text-sm font-medium text-stone-800">
               その他ご注意
             </span>
           </div>
@@ -208,7 +208,7 @@ export default function ReservationPage() {
       {/* Bottom CTA */}
       <section className="w-full border-t border-stone-200 bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
         <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <p className="text-lg font-medium text-stone-800">
+          <p className="font-serif text-lg font-medium text-stone-800">
             皆さまにお会いできる日を楽しみにしております 😌
           </p>
           <div className="flex gap-3 flex-wrap shrink-0">

@@ -41,7 +41,7 @@ export default function ReservationMethodCard({
           <p className={`text-[11px] font-medium tracking-[.08em] ${methodColor}`}>
             {methodNum}
           </p>
-          <p className={`text-[15px] font-semibold ${titleColor}`}>{title}</p>
+          <p className={`font-serif text-[15px] font-semibold ${titleColor}`}>{title}</p>
         </div>
       </div>
 
@@ -54,7 +54,7 @@ export default function ReservationMethodCard({
               {i + 1}
             </div>
             <div>
-              <p className="text-sm font-medium text-stone-800 mb-1">
+              <p className="font-serif text-sm font-medium text-stone-800 mb-1">
                 {step.title}
               </p>
               <div className="text-xs text-stone-500 leading-[1.75]">
