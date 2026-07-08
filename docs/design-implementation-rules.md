@@ -1,6 +1,6 @@
 # Design Implementation Rules
 
-このプロジェクトでは、`reference/` フォルダ内のデザイン画像を完成イメージとして実装してください。
+このプロジェクトでは、`mockup-images/`を完成イメージとして実装してください。
 
 ---
 
@@ -9,7 +9,7 @@
 画像はページ単位で管理しています。
 
 ```
-reference/
+mockup-images/
 ├── trea_nails_top_mockup.png
 ├── trea_concept_page.png
 ├── trea_gallery_page.png
