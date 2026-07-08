@@ -27,14 +27,14 @@ export default function ReservationMethodCard({
   const methodColor = isLine ? "text-[#2d7a30]" : "text-[#6a1fa0]";
   const titleColor = isLine ? "text-[#1a5c1e]" : "text-[#6a1fa0]";
   const stepNumStyle = isLine
-    ? "bg-[#FBEAF0] border-[#D4537E] text-[#993556]"
+    ? "bg-[#EFEDF5] border-[#9690AE] text-[#5D5786]"
     : "bg-[#faf0ff] border-[#d9b2f0] text-[#6a1fa0]";
   const btnStyle = isLine
     ? "border-[#06C755] text-[#06C755] bg-[#f0fbf2] hover:bg-[#d0f0d8]"
     : "border-[#833AB4] text-[#833AB4] bg-[#faf0ff] hover:bg-[#eed9ff]";
 
   return (
-    <div className="border border-stone-200 rounded-xl overflow-hidden flex flex-col">
+    <div className="border border-[#E4E2EE] rounded-xl overflow-hidden flex flex-col">
       <div className={`px-5 py-4 flex items-center gap-3 ${headBg}`}>
         <span className="text-2xl">{isLine ? "💬" : "📷"}</span>
         <div>
@@ -54,10 +54,10 @@ export default function ReservationMethodCard({
               {i + 1}
             </div>
             <div>
-              <p className="font-serif text-sm font-medium text-stone-800 mb-1">
+              <p className="font-serif text-sm font-medium text-[#312F55] mb-1">
                 {step.title}
               </p>
-              <div className="text-xs text-stone-500 leading-[1.75]">
+              <div className="text-xs text-[#6B6880] leading-[1.75]">
                 {step.description}
               </div>
             </div>
