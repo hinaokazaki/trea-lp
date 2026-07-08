@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model GalleryItem {
+  id          String   @id @default(cuid())
+  title       String?
+  description String?
+  imageUrl    String
+  isPublished Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  tags GalleryItemTag[]
+
+  @@index([isPublished, sortOrder])
+}
+
+model Tag {
+  id   String  @id @default(cuid())
+  name String  @unique
+  slug String  @unique
+  type TagType @default(DESIGN)
+
+  items GalleryItemTag[]
+}
+
+enum TagType {
+  DESIGN
+  SEASON
+}
+
+model GalleryItemTag {
+  galleryItemId String
+  tagId         String
+
+  galleryItem GalleryItem @relation(fields: [galleryItemId], references: [id], onDelete: Cascade)
+  tag         Tag         @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([galleryItemId, tagId])
+}
