@@ -38,14 +38,14 @@ export default function ReservationFlowSteps() {
       {steps.map((step, i) => (
         <div
           key={i}
-          className="relative bg-white border border-stone-200 rounded-xl p-5 pt-6 flex flex-col items-center text-center gap-2"
+          className="relative bg-white border border-[#E4E2EE] rounded-xl p-5 pt-6 flex flex-col items-center text-center gap-2"
         >
-          <span className="absolute top-2.5 left-2.5 w-5 h-5 rounded-full bg-[#FBEAF0] text-[#993556] text-[10px] font-semibold flex items-center justify-center">
+          <span className="absolute top-2.5 left-2.5 w-5 h-5 rounded-full bg-[#EFEDF5] text-[#5D5786] text-[10px] font-semibold flex items-center justify-center">
             {String(i + 1).padStart(2, "0")}
           </span>
-          <step.icon size={22} className="text-[#993556] mb-1" />
-          <p className="font-serif text-sm font-medium text-stone-800">{step.title}</p>
-          <p className="text-xs text-stone-500 leading-[1.75]">
+          <step.icon size={22} className="text-[#5D5786] mb-1" />
+          <p className="font-serif text-sm font-medium text-[#312F55]">{step.title}</p>
+          <p className="text-xs text-[#6B6880] leading-[1.75]">
             {step.description}
           </p>
         </div>
