@@ -13,14 +13,14 @@ type Props = {
 
 const styles: Record<Variant, string> = {
   primary:
-    "inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#D4537E] text-[#993556] bg-[#FBEAF0] hover:bg-[#F4C0D1] transition-colors",
+    "inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium text-white bg-gradient-to-br from-[#938CB4] to-[#77709C] shadow-sm hover:from-[#867FA9] hover:to-[#6A6390] transition-all",
   line: "inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#06C755] text-[#06C755] bg-[#f0fbf2] hover:bg-[#d0f0d8] transition-colors",
   instagram:
     "inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#833AB4] text-[#833AB4] bg-[#faf0ff] hover:bg-[#eed9ff] transition-colors",
   ghost:
-    "inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm border border-stone-300 text-stone-500 bg-transparent hover:bg-stone-100 transition-colors",
+    "inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-medium border border-[#4A4468] text-[#4A4468] bg-white/80 hover:bg-[#F0EEF6] transition-colors",
   solid:
-    "inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium text-white bg-[#4A4468] hover:bg-[#3B3654] transition-colors",
+    "inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-medium text-white bg-gradient-to-br from-[#938CB4] to-[#77709C] shadow-sm hover:from-[#867FA9] hover:to-[#6A6390] transition-all",
 };
 
 export default function Button({

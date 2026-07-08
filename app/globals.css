@@ -1,11 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --rose-primary: #993556;
-  --rose-medium: #D4537E;
-  --rose-light-border: #F4C0D1;
-  --rose-light-bg: #FBEAF0;
-  --rose-dark: #72243E;
+  --purple-primary: #7E78A3;   /* 塗りボタン・メインアクセント */
+  --purple-primary-dark: #6A6390; /* ホバー */
+  --purple-accent: #9690AE;    /* アイコン円・ボーダー・中間アクセント */
+  --purple-text: #5D5786;      /* アクセントテキスト・リンク */
+  --purple-dark: #4A4468;      /* 濃色テキスト・アウトラインボタン */
+  --purple-light-border: #D5D2E3;
+  --purple-light-bg: #EFEDF5;
+  --navy-heading: #312F55;     /* 見出し */
+  --lavender-section: #EFEBF1; /* ラベンダー系セクション背景 */
+  --cream-section: #F7F4F2;    /* クリーム系セクション背景 */
 }
 
 @theme inline {
@@ -15,7 +20,7 @@
 
 body {
   font-family: var(--font-sans);
-  color: #1c1917;
+  color: #2b2a40;
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
