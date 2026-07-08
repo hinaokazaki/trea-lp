@@ -24,8 +24,13 @@ export default function Header() {
           href="/"
           className="text-base font-medium tracking-widest text-stone-800 hover:text-[#993556] transition-colors"
         >
-          {/* <Image src="/icon.png" alt="TREA logo" width={120} height={60} /> */}
-          TRE&apos;A nails
+          <Image
+            src="/images/common/logo.webp"
+            alt="TRE'A private nail salon"
+            width={117}
+            height={32}
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Camera } from "lucide-react";
 
 const footerLinks = [
@@ -16,9 +17,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
           {/* Brand */}
           <div className="flex flex-col gap-3">
-            <span className="text-base font-medium tracking-widest text-stone-800">
-              TRE&apos;A nails
-            </span>
+            <Image
+              src="/images/common/logo.webp"
+              alt="TRE'A private nail salon"
+              width={140}
+              height={38}
+            />
             <p className="text-xs text-stone-500 leading-relaxed">
               完全貸切・一席のみのプライベートネイルサロン
               <br />
