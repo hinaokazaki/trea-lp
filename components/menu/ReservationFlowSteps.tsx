@@ -38,7 +38,7 @@ export default function ReservationFlowSteps() {
       {steps.map((step, i) => (
         <div
           key={i}
-          className="relative bg-white border border-[#E4E2EE] rounded-xl p-5 pt-6 flex flex-col items-center text-center gap-2"
+          className="relative bg-white border border-[#CFCCDD] rounded-xl p-5 pt-6 flex flex-col items-center text-center gap-2"
         >
           <span className="absolute top-2.5 left-2.5 w-5 h-5 rounded-full bg-[#EFEDF5] text-[#5D5786] text-[10px] font-semibold flex items-center justify-center">
             {String(i + 1).padStart(2, "0")}

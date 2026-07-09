@@ -85,36 +85,14 @@ export default async function GalleryPage() {
 
       <div className="max-w-5xl mx-auto w-full">
         <GalleryClient items={items} />
-
-        {/* Instagram */}
-        <section className="px-6 py-8 bg-[#F5F1FA] border-y border-[#EADFF3] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div>
-            <p className="font-serif text-sm font-medium text-[#312F55] mb-1.5">
-              最新のデザインはInstagramで随時更新中
-            </p>
-            <p className="text-xs text-[#6B6880] leading-[1.75]">
-              営業日のお知らせもInstagramのハイライトでご確認いただけます。
-              <br />
-              フォローしていただけると最新情報をお届けします。
-            </p>
-          </div>
-          <a
-            href="https://www.instagram.com/trea_nails_/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#833AB4] text-[#833AB4] bg-[#faf0ff] hover:bg-[#eed9ff] transition-colors"
-          >
-            <Camera size={16} />
-            Instagram: @trea_nails_
-          </a>
-        </section>
       </div>
 
       <CtaBanner
-        title="気になるデザインがあればご予約時にお知らせください"
-        description="画像をそのまま送っていただくと、イメージが伝わりやすいです"
-        primaryLabel="ご予約はこちら"
-        primaryHref="/reservation"
+        variant="feature"
+        title="最新のデザインはInstagramで随時更新中"
+        description="営業日のお知らせもInstagramのハイライトでご確認いただけます。"
+        primaryLabel="Instagram: @trea_nails_"
+        primaryHref="https://www.instagram.com/trea_nails_/"
       />
     </>
   );

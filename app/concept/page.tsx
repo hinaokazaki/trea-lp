@@ -2,7 +2,7 @@ import SectionHeading from "@/components/common/SectionHeading";
 import SalonThought from "@/components/concept/SalonThought";
 import NameOrigin from "@/components/concept/NameOrigin";
 import CtaBanner from "@/components/common/CtaBanner";
-import { Home, Scissors, Sparkles, HandHeart } from "lucide-react";
+import { HandHeart, Home, Scissors, Sparkles } from "lucide-react";
 
 const values = [
   {
@@ -29,10 +29,10 @@ export default function ConceptPage() {
   return (
     <>
       {/* Page header */}
-      <div className="w-full  border-b border-[#D5D2E3] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+      <div className="w-full bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center border-b border-[#D5D2E3]">
         <div className="max-w-5xl mx-auto px-6 py-10">
-          <p className="text-[11px] text-[#5D5786] tracking-[.12em] mb-4 font-medium">
-            ✦ CONCEPT
+          <p className="flex items-center gap-2.5 text-xs font-medium text-[#312F55] tracking-[.16em] mb-6">
+            <Sparkles size={15} className="text-[#5D5786]" />✦ CONCEPT
           </p>
           <h1 className="font-serif text-2xl font-medium leading-[1.65] text-[#3A3560] mb-4">
             ネイルを通して、
@@ -50,7 +50,6 @@ export default function ConceptPage() {
       {/* Salon thought */}
       <div className="max-w-5xl mx-auto w-full">
         <SalonThought />
-
         {/* Values */}
         <section className="py-10 px-6 border-b border-[#E4E2EE]">
           <p className="flex items-center gap-2.5 text-xs font-medium text-[#312F55] tracking-[.16em] mb-6">

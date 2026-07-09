@@ -19,7 +19,7 @@ export default function FaqAccordionItem({
   return (
     <div
       className={`border rounded-xl overflow-hidden mb-2 ${
-        open ? "border-[#D5D2E3]" : "border-[#E4E2EE]"
+        open ? "border-[#B7B2CC]" : "border-[#CFCCDD]"
       }`}
     >
       <button
@@ -35,7 +35,7 @@ export default function FaqAccordionItem({
       </button>
 
       {open && (
-        <div className="px-4 py-3.5 border-t border-[#D5D2E3] bg-white">
+        <div className="px-4 py-3.5 border-t border-[#CFCCDD] bg-white">
           {answer.split("\n\n").map((para, i) => {
             if (para.startsWith("⚠️")) {
               return (

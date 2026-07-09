@@ -31,9 +31,11 @@ export default function MenuPage() {
       <div className="max-w-5xl mx-auto w-full px-6 py-8">
         {/* Menu table */}
         <MenuTable />
+      </div>
 
-        {/* Flow */}
-        <section className="mt-10">
+      {/* Flow — full width background */}
+      <section className="w-full bg-[#EFEBF1]">
+        <div className="max-w-5xl mx-auto px-6 py-10">
           <div className="flex items-center gap-2 mb-5">
             <span className="text-[#5D5786]">✦</span>
             <span className="font-serif text-sm font-medium text-[#312F55]">
@@ -41,11 +43,11 @@ export default function MenuPage() {
             </span>
           </div>
           <ReservationFlowSteps />
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* Notes */}
-      <section className="w-full bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center border-y border-[#E4E2EE]">
+      <section className="w-full border-y border-[#E4E2EE]">
         <div className="max-w-5xl mx-auto px-6 py-10">
           <div className="flex items-center gap-2 mb-4">
             <span className="text-[#5D5786]">✦</span>

@@ -20,7 +20,7 @@ export default function MenuTable() {
           </div>
 
           {/* Items */}
-          <div className="divide-y divide-[#EDEBF4] px-5 bg-white rounded-xl shadow-sm">
+          <div className="divide-y divide-[#DDDAE8] px-5 bg-white rounded-xl border border-[#CFCCDD] shadow-sm">
             {cat.items.map((item, i) => (
               <div
                 key={i}
