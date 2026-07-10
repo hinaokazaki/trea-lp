@@ -22,17 +22,13 @@ export default function FaqPage() {
 
       <div className="max-w-5xl mx-auto w-full px-6 py-8">
         {faqCategories.map((cat, i) => (
-          <FaqCategorySection
-            key={cat.id}
-            category={cat}
-            firstOpen={i === 0}
-          />
+          <FaqCategorySection key={cat.id} category={cat} firstOpen={i === 0} />
         ))}
       </div>
 
       {/* Bottom CTA */}
       <section className="w-full border-t border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
-        <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="max-w-5xl mx-auto px-6 py-15 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <p className="font-serif text-lg font-medium text-[#312F55] mb-1.5">
               解決しない場合は、お気軽にご連絡ください
@@ -42,11 +38,7 @@ export default function FaqPage() {
             </p>
           </div>
           <div className="flex gap-3 flex-wrap shrink-0">
-            <Button
-              href="https://lin.ee/RnMcmQl"
-              variant="line"
-              external
-            >
+            <Button href="https://lin.ee/RnMcmQl" variant="line" external>
               LINEで質問する
             </Button>
             <Button href="/reservation">ご予約はこちら</Button>
