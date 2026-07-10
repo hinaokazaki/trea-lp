@@ -23,7 +23,9 @@ export default function ReservationMethodCard({
   extra,
 }: Props) {
   const isLine = method === "line";
-  const headBg = isLine ? "bg-[#f0fbf2] border-b border-[#b2e6be]" : "bg-[#faf0ff] border-b border-[#d9b2f0]";
+  const headBg = isLine
+    ? "bg-[#f0fbf2] border-b border-[#b2e6be]"
+    : "bg-[#faf0ff] border-b border-[#d9b2f0]";
   const methodColor = isLine ? "text-[#2d7a30]" : "text-[#6a1fa0]";
   const titleColor = isLine ? "text-[#1a5c1e]" : "text-[#6a1fa0]";
   const stepNumStyle = isLine
@@ -34,14 +36,18 @@ export default function ReservationMethodCard({
     : "border-[#833AB4] text-[#833AB4] bg-[#faf0ff] hover:bg-[#eed9ff]";
 
   return (
-    <div className="border border-[#E4E2EE] rounded-xl overflow-hidden flex flex-col">
+    <div className="border border-[#CFCCDD] rounded-xl overflow-hidden flex flex-col">
       <div className={`px-5 py-4 flex items-center gap-3 ${headBg}`}>
         <span className="text-2xl">{isLine ? "💬" : "📷"}</span>
         <div>
-          <p className={`text-[11px] font-medium tracking-[.08em] ${methodColor}`}>
+          <p
+            className={`text-[11px] font-medium tracking-[.08em] ${methodColor}`}
+          >
             {methodNum}
           </p>
-          <p className={`font-serif text-[15px] font-semibold ${titleColor}`}>{title}</p>
+          <p className={`font-serif text-[15px] font-semibold ${titleColor}`}>
+            {title}
+          </p>
         </div>
       </div>
 

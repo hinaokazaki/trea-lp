@@ -13,7 +13,8 @@ const afterSteps = [
       <>
         <p>ご予約確定後、サロンの住所・駐車場の詳細をお知らせします。</p>
         <div className="mt-2 bg-[#EFEDF5] border border-[#D5D2E3] rounded-lg px-3 py-2 text-[#3A3560]">
-          📍 自宅サロンのため、住所はご予約確定前にはお伝えしておりません。ご了承ください。
+          📍
+          自宅サロンのため、住所はご予約確定前にはお伝えしておりません。ご了承ください。
         </div>
       </>
     ),
@@ -41,7 +42,9 @@ export default function ReservationPage() {
           <p className="text-[11px] font-medium text-[#5D5786] tracking-[.12em] mb-4">
             ✦ RESERVATION
           </p>
-          <h1 className="font-serif text-2xl font-medium text-[#312F55] mb-4">ご予約</h1>
+          <h1 className="font-serif text-2xl font-medium text-[#312F55] mb-4">
+            ご予約
+          </h1>
           <p className="text-sm text-[#6B6880] leading-[1.85]">
             LINEまたはInstagramのDMからご予約いただけます。
             <br />
@@ -105,7 +108,7 @@ export default function ReservationPage() {
               {
                 title: "注意事項を確認",
                 description:
-                  'LINEメニューの「INFORMATION（注意事項）」をご確認ください。',
+                  "LINEメニューの「INFORMATION（注意事項）」をご確認ください。",
               },
               {
                 title: "『ネイル希望』と送信",
@@ -131,15 +134,15 @@ export default function ReservationPage() {
                 title: "フォロー",
                 description: (
                   <>
-                    Instagramアカウント{" "}
-                    <strong>@trea_nails_</strong> をフォローしてください。
+                    Instagramアカウント <strong>@trea_nails_</strong>{" "}
+                    をフォローしてください。
                   </>
                 ),
               },
               {
                 title: "注意事項を確認",
                 description:
-                  'プロフィールのハイライト「注意事項」をご確認ください。営業日もハイライトにて更新しています。',
+                  "プロフィールのハイライト「注意事項」をご確認ください。営業日もハイライトにて更新しています。",
               },
               {
                 title: "DMで『ネイル希望』と送信",
@@ -156,7 +159,7 @@ export default function ReservationPage() {
         </div>
 
         {/* After confirmation flow */}
-        <section className="border-t border-[#E4E2EE] pt-8 mb-10">
+        <section className="border-t border-[#CFCCDD] pt-8 mb-10">
           <div className="flex items-center gap-2 mb-5">
             <span className="text-[#5D5786]">✦</span>
             <span className="font-serif text-sm font-medium text-[#312F55]">
@@ -187,7 +190,7 @@ export default function ReservationPage() {
         </section>
 
         {/* Other notes */}
-        <section className="border-t border-[#E4E2EE] pt-8">
+        <section className="border-t border-[#CFCCDD] pt-8">
           <div className="flex items-center gap-2 mb-4">
             <span className="text-[#5D5786]">✦</span>
             <span className="font-serif text-sm font-medium text-[#312F55]">
@@ -196,7 +199,10 @@ export default function ReservationPage() {
           </div>
           <div className="flex flex-col gap-3">
             {otherNotes.map((note, i) => (
-              <div key={i} className="flex gap-3 text-xs text-[#6B6880] leading-[1.75]">
+              <div
+                key={i}
+                className="flex gap-3 text-xs text-[#6B6880] leading-[1.75]"
+              >
                 <span className="text-[#5D5786] text-sm shrink-0">✦</span>
                 <span>{note}</span>
               </div>
@@ -207,7 +213,7 @@ export default function ReservationPage() {
 
       {/* Bottom CTA */}
       <section className="w-full border-t border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
-        <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="max-w-5xl mx-auto px-6 py-15 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <p className="font-serif text-lg font-medium text-[#312F55]">
             皆さまにお会いできる日を楽しみにしております 😌
           </p>
