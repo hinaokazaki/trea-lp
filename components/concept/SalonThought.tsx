@@ -3,7 +3,7 @@ import { Sparkles } from "lucide-react";
 
 export default function SalonThought() {
   return (
-    <section className="py-12 px-6 border-b border-[#E4E2EE] bg-[#F7F4F2]">
+    <section className="py-12 px-6">
       <div className="grid md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-10 items-center">
         <div>
           <p className="flex items-center gap-2.5 text-xs font-medium text-[#312F55] tracking-[.16em] mb-6">
@@ -41,7 +41,7 @@ export default function SalonThought() {
           </p>
         </div>
 
-        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-[#EDEBF4]">
+        <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden bg-[#EDEBF4]">
           <Image
             src="/images/concept/salon-thought.webp"
             alt="サロン内観（仮画像 / PLACEHOLDER）"
@@ -49,9 +49,9 @@ export default function SalonThought() {
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 560px"
           />
-          <span className="absolute bottom-2 right-2 text-[10px] bg-black/40 text-white px-2 py-0.5 rounded">
-            PLACEHOLDER
-          </span>
+          {/* <span className="absolute bottom-2 right-2 text-[10px] bg-black/40 text-white px-2 py-0.5 rounded">
+            サロン内観
+          </span> */}
         </div>
       </div>
     </section>

@@ -50,8 +50,10 @@ export default function ConceptPage() {
       {/* Salon thought */}
       <div className="max-w-5xl mx-auto w-full">
         <SalonThought />
-        {/* Values */}
-        <section className="py-10 px-6 border-b border-[#E4E2EE]">
+      </div>
+      {/* Values */}
+      <section className="py-10 px-6 border-b border-[#E4E2EE] bg-[#F6F5F9]">
+        <div className="max-w-5xl mx-auto w-full">
           <p className="flex items-center gap-2.5 text-xs font-medium text-[#312F55] tracking-[.16em] mb-6">
             <Sparkles size={15} className="text-[#5D5786]" />
             TRE&apos;A が大切にしていること
@@ -60,7 +62,7 @@ export default function ConceptPage() {
             {values.map((v) => (
               <div
                 key={v.title}
-                className="rounded-xl p-6 bg-[#EFEDF5] border-gray-500 flex flex-col items-center text-center gap-3 shadow-sm"
+                className="rounded-xl p-6 border-gray-500 flex flex-col items-center text-center gap-3 shadow-sm"
               >
                 <div className="w-14 h-14 rounded-full bg-[#9690AE] flex items-center justify-center text-white shrink-0">
                   {v.icon}
@@ -74,8 +76,10 @@ export default function ConceptPage() {
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div className="max-w-5xl mx-auto w-full">
         <NameOrigin />
       </div>
 
