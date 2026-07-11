@@ -20,6 +20,11 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## ギャラリー運用ルール
+
+- **説明文（description）が空の作品ページは検索エンジンにインデックスさせない**方針です（`noindex` が自動付与されます）。説明文を入力すると自動的にインデックス対象に戻ります。
+- 新規作品を投稿するときは、**タイトル + 2〜3文の説明**（デザインの特徴・対応コース・施術時間の目安など）を書くことを推奨します。SEOとお客様への情報提供の両面で効果があります。
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
