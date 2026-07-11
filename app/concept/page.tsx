@@ -32,7 +32,7 @@ export default function ConceptPage() {
       <div className="w-full bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center border-b border-[#D5D2E3]">
         <div className="max-w-5xl mx-auto px-6 py-10">
           <p className="flex items-center gap-2.5 text-xs font-medium text-[#312F55] tracking-[.16em] mb-6">
-            <Sparkles size={15} className="text-[#5D5786]" />✦ CONCEPT
+            ✦ CONCEPT
           </p>
           <h1 className="font-serif text-2xl font-medium leading-[1.65] text-[#3A3560] mb-4">
             ネイルを通して、
@@ -62,7 +62,7 @@ export default function ConceptPage() {
             {values.map((v) => (
               <div
                 key={v.title}
-                className="rounded-xl p-6 border-gray-500 flex flex-col items-center text-center gap-3 shadow-sm"
+                className="rounded-xl p-6 border-gray-500 bg-white flex flex-col items-center text-center gap-3 shadow-sm"
               >
                 <div className="w-14 h-14 rounded-full bg-[#9690AE] flex items-center justify-center text-white shrink-0">
                   {v.icon}
