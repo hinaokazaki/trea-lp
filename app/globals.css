@@ -1,16 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --rose-primary: #993556;
-  --rose-medium: #D4537E;
-  --rose-light-border: #F4C0D1;
-  --rose-light-bg: #FBEAF0;
-  --rose-dark: #72243E;
+  --purple-primary: #7e78a3; /* 塗りボタン・メインアクセント */
+  --purple-primary-dark: #6a6390; /* ホバー */
+  --purple-accent: #9690ae; /* アイコン円・ボーダー・中間アクセント */
+  --purple-text: #5d5786; /* アクセントテキスト・リンク */
+  --purple-dark: #4a4468; /* 濃色テキスト・アウトラインボタン */
+  --purple-light-border: #d5d2e3;
+  --purple-light-bg: #efedf5;
+  --navy-heading: #312f55; /* 見出し */
+  --lavender-section: #efebf1; /* ラベンダー系セクション背景 */
+  --cream-section: #f7f4f2; /* クリーム系セクション背景 */
+}
+
+@theme inline {
+  --font-sans:
+    var(--font-noto-sans-jp), "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  --font-serif:
+    var(--font-noto-serif-jp), "Hiragino Mincho ProN", "Yu Mincho", serif;
 }
 
 body {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-  color: #1c1917;
+  font-family: var(--font-sans);
+  color: #2b2a40;
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }

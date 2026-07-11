@@ -67,52 +67,32 @@ export default async function GalleryPage() {
   return (
     <>
       {/* Page header */}
-      <div className="px-8 py-10 border-b border-stone-200">
-        <p className="text-[11px] font-medium text-stone-400 tracking-[.1em] uppercase mb-3">
-          GALLERY
-        </p>
-        <h1 className="text-xl font-medium text-stone-800 mb-3">
-          デザインギャラリー
-        </h1>
-        <p className="text-sm text-stone-500 leading-[1.85]">
-          短い爪・小さい爪でも可愛く仕上げた実例をご紹介します。
-          <br />
-          気になるデザインはご予約時の参考画像としてお送りください。
-        </p>
+      <div className="w-full border-b border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
+        <div className="max-w-5xl mx-auto px-6 py-14">
+          <p className="text-[11px] font-medium text-[#5D5786] tracking-[.12em] mb-4">
+            ✦ GALLERY
+          </p>
+          <h1 className="font-serif text-2xl font-medium text-[#312F55] mb-4">
+            デザインギャラリー
+          </h1>
+          <p className="text-sm text-[#6B6880] leading-[1.85]">
+            短い爪・小さい爪でも可愛く仕上げた実例をご紹介します。
+            <br />
+            気になるデザインはご予約時の参考画像としてお送りください。
+          </p>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto w-full">
         <GalleryClient items={items} />
-
-        {/* Instagram */}
-        <section className="px-6 py-8 bg-stone-50 border-y border-stone-200 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div>
-            <p className="text-sm font-medium text-stone-800 mb-1.5">
-              最新のデザインはInstagramで随時更新中
-            </p>
-            <p className="text-xs text-stone-500 leading-[1.75]">
-              営業日のお知らせもInstagramのハイライトでご確認いただけます。
-              <br />
-              フォローしていただけると最新情報をお届けします。
-            </p>
-          </div>
-          <a
-            href="https://www.instagram.com/trea_nails_/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium border-[1.5px] border-[#833AB4] text-[#833AB4] bg-[#faf0ff] hover:bg-[#eed9ff] transition-colors"
-          >
-            <Camera size={16} />
-            Instagram: @trea_nails_
-          </a>
-        </section>
       </div>
 
       <CtaBanner
-        title="気になるデザインがあればご予約時にお知らせください"
-        description="画像をそのまま送っていただくと、イメージが伝わりやすいです"
-        primaryLabel="ご予約はこちら"
-        primaryHref="/reservation"
+        variant="feature"
+        title="最新のデザインはInstagramで随時更新中"
+        description="営業日のお知らせもInstagramのハイライトでご確認いただけます。"
+        primaryLabel="Instagram: @trea_nails_"
+        primaryHref="https://www.instagram.com/trea_nails_/"
       />
     </>
   );

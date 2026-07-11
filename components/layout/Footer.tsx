@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Camera } from "lucide-react";
 
 const footerLinks = [
@@ -11,15 +12,18 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-stone-50 border-t border-stone-200 mt-auto">
+    <footer className="bg-[#F6F5F9] border-t border-[#E4E2EE] mt-auto">
       <div className="max-w-5xl mx-auto px-6 py-10">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
           {/* Brand */}
           <div className="flex flex-col gap-3">
-            <span className="text-base font-medium tracking-widest text-stone-800">
-              TRE&apos;A nails
-            </span>
-            <p className="text-xs text-stone-500 leading-relaxed">
+            <Image
+              src="/images/common/logo.webp"
+              alt="TRE'A private nail salon"
+              width={140}
+              height={38}
+            />
+            <p className="text-xs text-[#6B6880] leading-relaxed">
               完全貸切・一席のみのプライベートネイルサロン
               <br />
               短い爪でも可愛く上品に。
@@ -29,7 +33,7 @@ export default function Footer() {
                 href="https://www.instagram.com/trea_nails_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-400 hover:text-[#833AB4] transition-colors"
+                className="text-[#8D8AA0] hover:text-[#833AB4] transition-colors"
                 aria-label="Instagram"
               >
                 <Camera size={18} />
@@ -43,7 +47,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-xs text-stone-500 hover:text-[#993556] transition-colors"
+                className="text-xs text-[#6B6880] hover:text-[#5D5786] transition-colors"
               >
                 {link.label}
               </Link>
@@ -52,17 +56,17 @@ export default function Footer() {
 
           {/* Info */}
           <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-stone-500 leading-relaxed">
+            <p className="text-xs text-[#6B6880] leading-relaxed">
               営業日はInstagramのハイライトでご確認ください
             </p>
-            <p className="text-xs text-stone-500">
+            <p className="text-xs text-[#6B6880]">
               ご予約：LINE / Instagram DM
             </p>
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-stone-200 flex flex-col md:flex-row md:justify-between gap-2 text-xs text-stone-400">
-          <Link href="#" className="hover:text-stone-600">
+        <div className="mt-8 pt-6 border-t border-[#E4E2EE] flex flex-col md:flex-row md:justify-between gap-2 text-xs text-[#8D8AA0]">
+          <Link href="#" className="hover:text-[#55527A]">
             プライバシーポリシー
           </Link>
           <span>© 2025 TRE&apos;A nails</span>

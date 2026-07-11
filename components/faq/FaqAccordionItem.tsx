@@ -18,24 +18,24 @@ export default function FaqAccordionItem({
 
   return (
     <div
-      className={`border rounded-lg overflow-hidden mb-2 ${
-        open ? "border-[#F4C0D1]" : "border-stone-200"
+      className={`border rounded-xl overflow-hidden mb-2 ${
+        open ? "border-[#B7B2CC]" : "border-[#CFCCDD]"
       }`}
     >
       <button
         onClick={() => setOpen((v) => !v)}
         className={`w-full flex justify-between items-center px-4 py-3.5 text-left transition-colors ${
-          open ? "bg-[#FFF5F8] text-[#993556]" : "bg-white text-stone-800"
+          open ? "bg-[#F5F3F9] text-[#5D5786]" : "bg-white text-[#312F55]"
         }`}
       >
         <span className="text-sm font-medium pr-3">{question}</span>
-        <span className="shrink-0 text-[#993556]">
+        <span className="shrink-0 text-[#5D5786]">
           {open ? <Minus size={16} /> : <Plus size={16} />}
         </span>
       </button>
 
       {open && (
-        <div className="px-4 py-3.5 border-t border-[#F4C0D1] bg-white">
+        <div className="px-4 py-3.5 border-t border-[#CFCCDD] bg-white">
           {answer.split("\n\n").map((para, i) => {
             if (para.startsWith("⚠️")) {
               return (
@@ -51,7 +51,7 @@ export default function FaqAccordionItem({
               return (
                 <div
                   key={i}
-                  className="mt-3 bg-[#FBEAF0] border border-[#F4C0D1] rounded-lg px-3 py-2.5 text-xs text-[#72243E] leading-[1.8]"
+                  className="mt-3 bg-[#EFEDF5] border border-[#D5D2E3] rounded-lg px-3 py-2.5 text-xs text-[#3A3560] leading-[1.8]"
                 >
                   {para}
                 </div>
@@ -59,7 +59,7 @@ export default function FaqAccordionItem({
             }
             if (para.startsWith("①")) {
               return (
-                <ol key={i} className="list-decimal pl-5 flex flex-col gap-2 text-xs text-stone-500 mb-2">
+                <ol key={i} className="list-decimal pl-5 flex flex-col gap-2 text-xs text-[#6B6880] mb-2">
                   {para
                     .split(" → ")
                     .map((s) => s.replace(/^[①②③④⑤]\s*/, ""))
@@ -70,7 +70,7 @@ export default function FaqAccordionItem({
               );
             }
             return (
-              <p key={i} className={`text-xs text-stone-500 leading-[1.85] ${i > 0 ? "mt-2" : ""}`}>
+              <p key={i} className={`text-xs text-[#6B6880] leading-[1.85] ${i > 0 ? "mt-2" : ""}`}>
                 {para}
               </p>
             );
