@@ -1,68 +1,10 @@
-import { Camera } from "lucide-react";
+import { Suspense } from "react";
 import GalleryClient from "@/components/gallery/GalleryClient";
 import CtaBanner from "@/components/common/CtaBanner";
-import type { GalleryItemWithTags } from "@/types/gallery";
-
-// Static fallback while DB is not configured
-const FALLBACK_ITEMS: GalleryItemWithTags[] = [
-  [1, "ワンカラー", "one-color", "春・夏", "spring-summer"],
-  [2, "ワンカラー", "one-color", "秋・冬", "autumn-winter"],
-  [3, "ワンカラー", "one-color", "春・夏", "spring-summer"],
-  [4, "ワンカラー", "one-color", "秋・冬", "autumn-winter"],
-  [5, "シンプルアート", "simple-art", "春・夏", "spring-summer"],
-  [6, "シンプルアート", "simple-art", "秋・冬", "autumn-winter"],
-  [7, "シンプルアート", "simple-art", "春・夏", "spring-summer"],
-  [8, "ニュアンス", "nuance", "秋・冬", "autumn-winter"],
-  [9, "ニュアンス", "nuance", "春・夏", "spring-summer"],
-  [10, "ニュアンス", "nuance", "秋・冬", "autumn-winter"],
-  [11, "ニュアンス", "nuance", "春・夏", "spring-summer"],
-  [12, "フレンチ", "french", "春・夏", "spring-summer"],
-  [13, "フレンチ", "french", "秋・冬", "autumn-winter"],
-  [14, "フット", "foot", "春・夏", "spring-summer"],
-  [15, "フット", "foot", "秋・冬", "autumn-winter"],
-].map(([idx, designName, designSlug, seasonName, seasonSlug]) => ({
-  id: String(idx),
-  title: null,
-  description: null,
-  imageUrl: `/images/gallery/2026-07-${String(idx).padStart(3, "0")}.webp`,
-  isPublished: true,
-  sortOrder: Number(idx),
-  tags: [
-    {
-      tag: {
-        id: `d-${designSlug}`,
-        name: String(designName),
-        slug: String(designSlug),
-        type: "DESIGN" as const,
-      },
-    },
-    {
-      tag: {
-        id: `s-${seasonSlug}`,
-        name: String(seasonName),
-        slug: String(seasonSlug),
-        type: "SEASON" as const,
-      },
-    },
-  ],
-}));
-
-async function getGalleryItems(): Promise<GalleryItemWithTags[]> {
-  if (!process.env.DATABASE_URL) return FALLBACK_ITEMS;
-  try {
-    const prisma = (await import("@/lib/prisma")).default;
-    return await prisma.galleryItem.findMany({
-      where: { isPublished: true },
-      orderBy: { sortOrder: "asc" },
-      include: { tags: { include: { tag: true } } },
-    });
-  } catch {
-    return FALLBACK_ITEMS;
-  }
-}
+import { getPublishedGalleryItems } from "@/lib/gallery";
 
 export default async function GalleryPage() {
-  const items = await getGalleryItems();
+  const items = await getPublishedGalleryItems();
 
   return (
     <>
@@ -84,7 +26,10 @@ export default async function GalleryPage() {
       </div>
 
       <div className="max-w-5xl mx-auto w-full">
-        <GalleryClient items={items} />
+        {/* GalleryClient は useSearchParams を使うため Suspense 境界が必要 */}
+        <Suspense>
+          <GalleryClient items={items} />
+        </Suspense>
       </div>
 
       <CtaBanner
