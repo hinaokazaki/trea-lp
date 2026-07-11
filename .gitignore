@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code local workspace
+/.claude/
+
+# uploaded gallery images (managed by admin UI)
+/public/uploads/*
+!/public/uploads/gallery
+/public/uploads/gallery/*
+!/public/uploads/gallery/.gitkeep
