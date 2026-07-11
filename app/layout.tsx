@@ -20,6 +20,9 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+  ),
   title: "TRE'A nails | プライベートネイルサロン",
   description:
     "短い爪でも可愛く上品に。完全貸切・一席のみのプライベートネイルサロン TRE'A（トレア）。",

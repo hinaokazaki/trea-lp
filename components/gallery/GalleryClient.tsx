@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { FilterSlug, GalleryItemWithTags } from "@/types/gallery";
 
 const FILTER_TABS: { label: string; slug: FilterSlug }[] = [
@@ -18,7 +19,31 @@ const FILTER_TABS: { label: string; slug: FilterSlug }[] = [
 type Props = { items: GalleryItemWithTags[] };
 
 export default function GalleryClient({ items }: Props) {
-  const [activeFilter, setActiveFilter] = useState<FilterSlug>("all");
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  // フィルタ状態はURLクエリ（/gallery?tag=nuance）で管理する。
+  // モーダルから戻ったときに状態が維持され、フィルタ済みURLをシェアできる。
+  const tagParam = searchParams.get("tag");
+  const activeFilter: FilterSlug = FILTER_TABS.some(
+    (tab) => tab.slug === tagParam
+  )
+    ? (tagParam as FilterSlug)
+    : "all";
+
+  const setFilter = (slug: FilterSlug) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (slug === "all") {
+      params.delete("tag");
+    } else {
+      params.set("tag", slug);
+    }
+    const query = params.toString();
+    router.replace(query ? `${pathname}?${query}` : pathname, {
+      scroll: false,
+    });
+  };
 
   const filtered =
     activeFilter === "all"
@@ -38,7 +63,7 @@ export default function GalleryClient({ items }: Props) {
           {FILTER_TABS.map((tab) => (
             <button
               key={tab.slug}
-              onClick={() => setActiveFilter(tab.slug)}
+              onClick={() => setFilter(tab.slug)}
               className={`px-4 py-1.5 rounded-full text-xs transition-colors ${
                 activeFilter === tab.slug
                   ? "bg-[#7E78A3] border border-[#7E78A3] text-white font-medium"
@@ -57,8 +82,10 @@ export default function GalleryClient({ items }: Props) {
           {filtered.map((item) => {
             const designTag = item.tags.find((t) => t.tag.type === "DESIGN");
             return (
-              <div
+              <Link
                 key={item.id}
+                href={`/gallery/${item.id}`}
+                scroll={false}
                 className="relative aspect-square rounded-lg overflow-hidden bg-[#EDEBF4] group cursor-pointer"
               >
                 <Image
@@ -84,7 +111,7 @@ export default function GalleryClient({ items }: Props) {
                     {designTag.tag.name}
                   </span>
                 )}
-              </div>
+              </Link>
             );
           })}
         </div>
