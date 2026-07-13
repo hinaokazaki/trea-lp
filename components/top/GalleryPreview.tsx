@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  getLatestGalleryItems,
+  getGalleryItemDisplayTitle,
+} from "@/lib/gallery";
 
-const previewImages = [
-  { src: "/images/gallery/2026-07-001.webp", alt: "ギャラリー1（仮画像）" },
-  { src: "/images/gallery/2026-07-005.webp", alt: "ギャラリー2（仮画像）" },
-  { src: "/images/gallery/2026-07-009.webp", alt: "ギャラリー3（仮画像）" },
-  { src: "/images/gallery/2026-07-012.webp", alt: "ギャラリー4（仮画像）" },
-];
+export default async function GalleryPreview() {
+  // アドミンでアップロードされた公開中の作品のうち、最新の4件を表示する
+  const items = await getLatestGalleryItems(4);
 
-export default function GalleryPreview() {
+  if (items.length === 0) return null;
+
   return (
     <section className="w-full border-b border-[#E4E2EE] bg-[#F6F5F9]">
       <div className="max-w-5xl mx-auto px-6 py-10">
@@ -25,14 +27,14 @@ export default function GalleryPreview() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-          {previewImages.map((img) => (
+          {items.map((item) => (
             <div
-              key={img.src}
+              key={item.id}
               className="relative aspect-square rounded-lg overflow-hidden bg-[#EDEBF4]"
             >
               <Image
-                src={img.src}
-                alt={img.alt}
+                src={item.imageUrl}
+                alt={`${getGalleryItemDisplayTitle(item)}の作品写真`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"
