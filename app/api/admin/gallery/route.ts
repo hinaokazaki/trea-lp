@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { revalidatePath } from "next/cache";
 import prisma from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth/server";
 import { validateGalleryItemInput } from "@/lib/validation";
@@ -59,6 +60,10 @@ export async function POST(request: NextRequest) {
     },
     include: { tags: { include: { tag: true } } },
   });
+
+  // 公開ページに新着を即時反映(トップの最新4件・ギャラリー一覧)
+  revalidatePath("/");
+  revalidatePath("/gallery");
 
   return NextResponse.json(item, { status: 201 });
 }
