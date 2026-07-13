@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { revalidatePath } from "next/cache";
 import prisma from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth/server";
 import { validateGalleryItemInput } from "@/lib/validation";
@@ -79,6 +80,11 @@ export async function PATCH(request: NextRequest, { params }: Params) {
     await deleteGalleryImage(existing.imageUrl);
   }
 
+  // 公開ページに更新を即時反映
+  revalidatePath("/");
+  revalidatePath("/gallery");
+  revalidatePath(`/gallery/${item.id}`);
+
   return NextResponse.json(item);
 }
 
@@ -95,6 +101,11 @@ export async function DELETE(_request: NextRequest, { params }: Params) {
   await prisma.galleryItem.delete({ where: { id: params.id } });
   // DB削除成功後にストレージの画像を削除
   await deleteGalleryImage(existing.imageUrl);
+
+  // 公開ページに削除を即時反映
+  revalidatePath("/");
+  revalidatePath("/gallery");
+  revalidatePath(`/gallery/${params.id}`);
 
   return NextResponse.json({ ok: true });
 }
