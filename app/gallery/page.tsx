@@ -3,6 +3,9 @@ import GalleryClient from "@/components/gallery/GalleryClient";
 import CtaBanner from "@/components/common/CtaBanner";
 import { getPublishedGalleryItems } from "@/lib/gallery";
 
+// ISR: 作品の追加・更新を反映する(管理APIのrevalidatePathで即時反映もされる)
+export const revalidate = 3600;
+
 export default async function GalleryPage() {
   const items = await getPublishedGalleryItems();
 
