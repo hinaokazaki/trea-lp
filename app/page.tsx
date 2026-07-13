@@ -5,6 +5,9 @@ import GalleryPreview from "@/components/top/GalleryPreview";
 import MenuPreview from "@/components/top/MenuPreview";
 import CtaBanner from "@/components/common/CtaBanner";
 
+// ISR: ギャラリー最新4件を反映する(管理APIのrevalidatePathで即時反映もされる)
+export const revalidate = 3600;
+
 const recommendedFor = [
   "爪が短くてネイルを諦めていた方",
   "家事・育児で伸ばせないけれど、おしゃれしたい方",
