@@ -60,6 +60,24 @@ export async function getPublishedGalleryItems(): Promise<
   }
 }
 
+/** トップページのプレビュー用: 公開中の作品をアップロード(createdAt)が新しい順に取得する */
+export async function getLatestGalleryItems(
+  limit = 4
+): Promise<GalleryItemWithTags[]> {
+  if (!process.env.DATABASE_URL) return FALLBACK_ITEMS.slice(0, limit);
+  try {
+    const prisma = (await import("@/lib/prisma")).default;
+    return await prisma.galleryItem.findMany({
+      where: { isPublished: true },
+      orderBy: { createdAt: "desc" },
+      take: limit,
+      include: { tags: { include: { tag: true } } },
+    });
+  } catch {
+    return FALLBACK_ITEMS.slice(0, limit);
+  }
+}
+
 /** 公開中の作品を1件取得する。非公開・存在しないIDは null */
 export async function getGalleryItem(
   id: string
