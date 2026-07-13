@@ -2,11 +2,12 @@ import SectionHeading from "@/components/common/SectionHeading";
 import SalonThought from "@/components/concept/SalonThought";
 import NameOrigin from "@/components/concept/NameOrigin";
 import CtaBanner from "@/components/common/CtaBanner";
-import { HandHeart, Home, Scissors, Sparkles } from "lucide-react";
+import { HandHeart, Home, Sparkles } from "lucide-react";
+import NailPolishSparkleIcon from "@/components/common/NailPolishSparkleIcon";
 
 const values = [
   {
-    icon: <Scissors size={20} />,
+    icon: <NailPolishSparkleIcon size={20} />,
     title: '短い爪でも"可愛い"を',
     description:
       "爪を伸ばせなくても大丈夫。美しいフォルムで可愛さと上品さを引き出します。",
