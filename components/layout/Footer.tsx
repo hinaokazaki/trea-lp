@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Camera } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import InstagramIcon from "@/components/common/InstagramIcon";
 
 const footerLinks = [
   { href: "/concept", label: "コンセプト" },
@@ -28,17 +29,6 @@ export default function Footer() {
               <br />
               短い爪でも可愛く上品に。
             </p>
-            <div className="flex gap-3 mt-1">
-              <a
-                href="https://www.instagram.com/trea_nails_/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#8D8AA0] hover:text-[#833AB4] transition-colors"
-                aria-label="Instagram"
-              >
-                <Camera size={18} />
-              </a>
-            </div>
           </div>
 
           {/* Nav */}
@@ -62,6 +52,24 @@ export default function Footer() {
             <p className="text-xs text-[#6B6880]">
               ご予約：LINE / Instagram DM
             </p>
+            <div className="flex items-center gap-3 mt-1">
+              <Link
+                href="/reservation"
+                className="text-[#8D8AA0] hover:text-[#06C755] transition-colors"
+                aria-label="ご予約ページ（LINE予約のご案内）"
+              >
+                <MessageCircle size={18} />
+              </Link>
+              <a
+                href="https://www.instagram.com/trea_nails_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#8D8AA0] hover:text-[#833AB4] transition-colors"
+                aria-label="Instagram"
+              >
+                <InstagramIcon size={18} />
+              </a>
+            </div>
           </div>
         </div>
 
