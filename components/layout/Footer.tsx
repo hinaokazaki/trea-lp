@@ -19,10 +19,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-3">
             <Image
-              src="/images/common/logo.webp"
+              src="/images/top/logo.webp"
               alt="TRE'A private nail salon"
-              width={140}
-              height={38}
+              width={130}
+              height={56}
             />
             <p className="text-xs text-[#6B6880] leading-relaxed">
               完全貸切・一席のみのプライベートネイルサロン
