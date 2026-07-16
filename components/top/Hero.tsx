@@ -9,10 +9,10 @@ export default function Hero() {
           {/* Copy */}
           <div className="flex flex-col justify-center gap-4 py-10">
             <Image
-              src="/images/common/logo.webp"
+              src="/images/top/logo.webp"
               alt="TRE'A private nail salon"
               width={235}
-              height={64}
+              height={101}
             />
             <p className="text-[11px] text-[#5D5786] tracking-[.12em] font-medium">
               完全貸切一席サロン
