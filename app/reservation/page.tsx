@@ -89,18 +89,17 @@ export default function ReservationPage() {
                       nailsのLINEを友達追加してください。
                     </p>
                     <div className="my-3 text-center">
-                      <div className="inline-block relative w-20 h-20 rounded-lg overflow-hidden border border-[#E4E2EE] bg-[#EDEBF4]">
+                      <div className="inline-block relative w-20 h-20 rounded-lg overflow-hidden border border-[#E4E2EE] bg-white">
                         <Image
-                          src="/images/reservation/line-qr.png"
-                          alt="LINE QRコード（仮画像 / PLACEHOLDER）"
+                          src="/images/reservation/line.png"
+                          alt="TRE'A nails LINE友だち追加QRコード"
                           fill
-                          className="object-cover"
+                          className="object-contain"
                         />
                       </div>
                       <p className="text-[10px] text-[#8D8AA0] mt-1">
                         lin.ee/RnMcmQl
                       </p>
-                      <p className="text-[9px] text-[#B4B2C4]">PLACEHOLDER</p>
                     </div>
                   </>
                 ),
