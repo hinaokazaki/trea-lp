@@ -14,83 +14,135 @@ export type MenuCategory = {
 
 export const menuCategories: MenuCategory[] = [
   {
-    id: "gel",
-    name: "ジェルネイル",
-    badge: "手指10本",
+    id: "simple",
+    name: "シンプルメニュー",
     items: [
       {
+        name: "クリア",
+        price: "¥4,500",
+      },
+      {
         name: "ワンカラー",
-        description: "シンプルで上品。どんな場面にも合わせやすい定番スタイル",
-        price: "¥〇,〇〇〇",
-        duration: "約60分",
+        price: "¥5,000",
       },
       {
-        name: "シンプルアート",
-        description: "ラメ・ラインなど控えめなアートをプラス",
-        price: "¥〇,〇〇〇〜",
-        duration: "約75分",
+        name: "グラデーション",
+        description: "ベースカラー追加：+¥500",
+        price: "¥5,500",
       },
       {
-        name: "デザインネイル",
-        description:
-          "ご希望のデザインをご相談ください（インスタ参考画像歓迎）",
-        price: "¥〇,〇〇〇〜",
-        duration: "約90分〜",
+        name: "マグネット",
+        price: "¥5,500",
+      },
+      {
+        name: "フラッシュ",
+        price: "¥5,500",
+      },
+      {
+        name: "フレンチ",
+        description: "ベースカラー追加：+¥500",
+        price: "¥6,000",
       },
     ],
   },
   {
-    id: "foot",
-    name: "フットネイル",
-    badge: "足指10本",
+    id: "design",
+    name: "デザインメニュー",
     items: [
       {
-        name: "フットワンカラー",
-        description: "足元も清潔感のある仕上がりに",
-        price: "¥〇,〇〇〇",
-        duration: "約60分",
+        name: "シンプルデザイン",
+        price: "¥6,200",
       },
       {
-        name: "手足セット",
-        description: "手指＋足指をまとめてケア。お得なセット料金",
-        price: "¥〇〇,〇〇〇",
-        duration: "約120分",
+        name: "スタンダードデザイン",
+        price: "¥7,200",
+      },
+      {
+        name: "プレミアムデザイン",
+        price: "¥8,200",
       },
     ],
   },
   {
     id: "off",
-    name: "オフ・ケア",
+    name: "オフメニュー",
     items: [
       {
-        name: "ジェルオフのみ",
-        description: "他店施術のオフも承ります（状態によりご相談）",
-        price: "¥〇,〇〇〇",
-        duration: "約30分",
+        name: "当店付け替えオフ",
+        description: "次回4週間以内のご予約でオフ無料",
+        price: "¥500",
       },
       {
-        name: "オフ＋付け替え",
-        description: "付け替えの場合はこちら（セット割引あり）",
-        price: "¥〇,〇〇〇〜",
-        duration: "約90分〜",
+        name: "他店付け替えオフ",
+        description: "ご新規様オフ無料",
+        price: "¥1,000",
+      },
+    ],
+  },
+  {
+    id: "other",
+    name: "その他メニュー",
+    items: [
+      {
+        name: "当店オフのみ",
+        price: "¥3,000",
+      },
+      {
+        name: "他店オフのみ",
+        description: "スカルプオフは行っておりません",
+        price: "¥4,000",
+      },
+      {
+        name: "長さだし",
+        description:
+          "・10本長さだしは行っておりません\n・他の爪の長さに合わせるための長さだしのみ対応",
+        price: "＋¥250 / 1本",
       },
     ],
   },
   {
     id: "option",
-    name: "オプション",
-    badge: "各メニューに追加可",
+    name: "オプションメニュー",
     items: [
-      { name: "ラメグラデーション", price: "＋¥〇〇〇" },
-      { name: "ストーン（3粒まで）", price: "＋¥〇〇〇" },
-      { name: "ネイルケア（甘皮処理）", price: "＋¥〇〇〇" },
+      {
+        name: "フットネイル",
+        price: "＋¥1,000",
+      },
+      {
+        name: "パウダー",
+        price: "＋¥100 / 1本",
+      },
+      {
+        name: "フレンチ",
+        price: "＋¥150 / 1本",
+      },
+      {
+        name: "スキニーフレンチ",
+        price: "＋¥100 / 1本",
+      },
+      {
+        name: "マットコーティング",
+        price: "＋¥50 / 1本",
+      },
+      {
+        name: "ホログラム",
+        price: "＋¥50〜200 / 1本",
+      },
+      {
+        name: "ストーン・スタッズ",
+        price: "＋¥100〜 / 1本",
+      },
+      {
+        name: "ぷっくり仕上げ",
+        price: "＋¥100 / 1本",
+      },
     ],
   },
 ];
 
 export const topMenuItems = [
-  { name: "ワンカラー", price: "¥〇,〇〇〇〜" },
-  { name: "シンプルアート", price: "¥〇,〇〇〇〜" },
-  { name: "フットネイル", price: "¥〇,〇〇〇〜" },
-  { name: "オフのみ", price: "¥〇,〇〇〇〜" },
+  { name: "ワンカラー", price: "¥5,000" },
+  { name: "シンプルデザイン", price: "¥6,200" },
+  { name: "当店付け替えオフ", price: "¥500" },
+  { name: "当店オフのみ", price: "¥3,000" },
 ];
