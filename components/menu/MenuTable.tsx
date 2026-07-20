@@ -29,7 +29,7 @@ export default function MenuTable() {
                 <div>
                   <p className="text-sm text-[#312F55]">{item.name}</p>
                   {item.description && (
-                    <p className="text-[11px] text-[#8D8AA0] mt-0.5">
+                    <p className="text-[11px] text-[#8D8AA0] mt-0.5 whitespace-pre-line">
                       {item.description}
                     </p>
                   )}
