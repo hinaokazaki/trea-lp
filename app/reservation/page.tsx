@@ -133,8 +133,23 @@ export default function ReservationPage() {
                 title: "フォロー",
                 description: (
                   <>
-                    Instagramアカウント <strong>@trea_nails_</strong>{" "}
-                    をフォローしてください。
+                    <p>
+                      Instagramアカウント <strong>@trea_nails_</strong>{" "}
+                      をフォローしてください。
+                    </p>
+                    <div className="my-3 text-center">
+                      <div className="inline-block relative w-20 h-20 rounded-lg overflow-hidden border border-[#E4E2EE] bg-white">
+                        <Image
+                          src="/images/reservation/instagram.jpg"
+                          alt="TRE'A nails InstagramフォローQRコード"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <p className="text-[10px] text-[#8D8AA0] mt-1">
+                        @trea_nails_
+                      </p>
+                    </div>
                   </>
                 ),
               },
