@@ -58,7 +58,7 @@ export default function Footer() {
                 className="text-[#8D8AA0] hover:text-[#06C755] transition-colors"
                 aria-label="ご予約ページ（LINE予約のご案内）"
               >
-                <MessageCircle size={18} />
+                <MessageCircle size={24} />
               </Link>
               <a
                 href="https://www.instagram.com/trea_nails_/"
@@ -67,7 +67,7 @@ export default function Footer() {
                 className="text-[#8D8AA0] hover:text-[#833AB4] transition-colors"
                 aria-label="Instagram"
               >
-                <InstagramIcon size={18} />
+                <InstagramIcon size={24} />
               </a>
             </div>
           </div>
