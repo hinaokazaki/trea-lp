@@ -77,7 +77,7 @@ export default function Footer() {
           <Link href="#" className="hover:text-[#55527A]">
             プライバシーポリシー
           </Link>
-          <span>© 2025 TRE&apos;A nails</span>
+          <span>© {new Date().getFullYear()} TRE&apos;A nails</span>
         </div>
       </div>
     </footer>
