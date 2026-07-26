@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-[#E4E2EE] flex flex-col md:flex-row md:justify-between gap-2 text-xs text-[#8D8AA0]">
-          <Link href="#" className="hover:text-[#55527A]">
+          <Link href="/privacy" className="hover:text-[#55527A]">
             プライバシーポリシー
           </Link>
           <span>© {new Date().getFullYear()} TRE&apos;A nails</span>
