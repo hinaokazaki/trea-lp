@@ -18,7 +18,7 @@ export default async function GalleryPage() {
             ✦ GALLERY
           </p>
           <h1 className="font-serif text-2xl font-medium text-[#312F55] mb-4">
-            デザインギャラリー
+            ギャラリー
           </h1>
           <p className="text-sm text-[#6B6880] leading-[1.85]">
             短い爪・小さい爪でも可愛く仕上げた実例をご紹介します。
