@@ -229,7 +229,7 @@ export default function ReservationPage() {
       <section className="w-full border-t border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
         <div className="max-w-5xl mx-auto px-6 py-15 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <p className="font-serif text-lg font-medium text-[#312F55]">
-            皆さまにお会いできる日を楽しみにしております 😌
+            皆さまにお会いできる日を楽しみにしております
           </p>
           <div className="flex gap-3 flex-wrap shrink-0">
             <a
