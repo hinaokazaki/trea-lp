@@ -35,10 +35,6 @@ export default function SalonThought() {
             </p>
             <p>皆さまにお会いできる日を、楽しみにしております。</p>
           </div>
-
-          <p className="font-serif text-[15px] text-[#312F55] tracking-[.08em] mt-8">
-            &mdash;&ensp;TRE&apos;A nails
-          </p>
         </div>
 
         <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden bg-[#EDEBF4]">
