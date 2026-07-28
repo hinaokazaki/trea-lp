@@ -5,7 +5,7 @@ const steps = [
     icon: Calendar,
     title: "ご予約",
     description:
-      "フォームまたはLINEでご予約。希望デザインのイメージも一緒にお送りください。",
+      "LINEまたはInstagramのDMでご予約。希望デザインのイメージも一緒にお送りください。",
   },
   {
     icon: MapPin,
@@ -15,20 +15,17 @@ const steps = [
   {
     icon: MessageCircle,
     title: "ご来店・カウンセリング",
-    description:
-      "お好みやその日の気分をヒアリング。お悩みも気軽にご相談を。",
+    description: "お好みやその日の気分をヒアリング。お悩みも気軽にご相談を。",
   },
   {
     icon: Sparkles,
     title: "施術",
-    description:
-      "完全貸切のゆったりとした空間で、ほっとひと息ついてください。",
+    description: "完全貸切のゆったりとした空間で、ほっとひと息ついてください。",
   },
   {
     icon: Heart,
     title: "お会計・ご帰宅",
-    description:
-      "お支払いは現金にてお願いします。次回ご予約もここでどうぞ。",
+    description: "お支払いは現金にてお願いします。次回ご予約もここでどうぞ。",
   },
 ];
 
@@ -44,7 +41,9 @@ export default function ReservationFlowSteps() {
             {String(i + 1).padStart(2, "0")}
           </span>
           <step.icon size={22} className="text-[#5D5786] mb-1" />
-          <p className="font-serif text-sm font-medium text-[#312F55]">{step.title}</p>
+          <p className="font-serif text-sm font-medium text-[#312F55]">
+            {step.title}
+          </p>
           <p className="text-xs text-[#6B6880] leading-[1.75]">
             {step.description}
           </p>
