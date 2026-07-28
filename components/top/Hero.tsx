@@ -18,7 +18,7 @@ export default function Hero() {
               完全貸切一席サロン
             </p>
             <h1 className="font-serif text-2xl font-medium leading-[1.6] text-[#312F55]">
-              短い爪でも、可愛くて上品に。
+              短い爪でも、可愛く上品に。
             </h1>
             <p className="text-sm text-[#6B6880] leading-[1.8]">
               家事や育児で爪を伸ばせないあなたへ。
@@ -36,13 +36,13 @@ export default function Hero() {
           </div>
 
           {/* Hero image */}
-          <div className="relative min-h-72 md:min-h-[420px] flex items-end justify-center md:justify-start overflow-hidden">
-            <div className="relative w-full h-full max-w-[440px]">
+          <div className="relative min-h-72 md:min-h-105 flex items-end justify-center md:justify-start overflow-hidden">
+            <div className="relative w-full h-full max-w-110">
               <Image
                 src="/images/top/hero-nail.webp"
                 alt="TRE'A nails の実際のネイルデザイン"
                 fill
-                className="object-contain object-bottom md:object-left-bottom"
+                className="object-contain object-bottom md:object-bottom-left"
                 sizes="(min-width: 768px) 440px, 100vw"
                 priority
               />
