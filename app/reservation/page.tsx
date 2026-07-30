@@ -217,7 +217,7 @@ export default function ReservationPage() {
                 key={i}
                 className="flex gap-3 text-xs text-[#6B6880] leading-[1.75]"
               >
-                <span className="text-[#5D5786] text-sm shrink-0">✦</span>
+                <span className="text-[#5D5786] text-sm shrink-0">•</span>
                 <span>{note}</span>
               </div>
             ))}
