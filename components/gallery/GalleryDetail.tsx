@@ -23,7 +23,7 @@ export default function GalleryDetail({ item, variant = "page" }: Props) {
     >
       {/* 作品画像 */}
       <div
-        className={`relative aspect-square overflow-hidden bg-[#EDEBF4] ${
+        className={`relative aspect-4/5 overflow-hidden bg-[#EDEBF4] ${
           isModal ? "w-full" : "rounded-xl"
         }`}
       >
