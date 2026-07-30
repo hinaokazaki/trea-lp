@@ -71,7 +71,9 @@ export default function GalleryDetail({ item, variant = "page" }: Props) {
           </div>
         )}
 
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div
+          className={`flex flex-col gap-3 ${isModal ? "" : "sm:flex-row"}`}
+        >
           <Button href="/reservation" variant="primary">
             このデザインで予約する
           </Button>
