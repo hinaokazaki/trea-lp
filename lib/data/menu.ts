@@ -142,7 +142,7 @@ export const menuCategories: MenuCategory[] = [
 
 export const topMenuItems = [
   { name: "ワンカラー", price: "¥5,000" },
+  { name: "マグネット", price: "¥5,500" },
+  { name: "グラデーション", price: "¥5,500" },
   { name: "シンプルデザイン", price: "¥6,200" },
-  { name: "当店付け替えオフ", price: "¥500" },
-  { name: "当店オフのみ", price: "¥3,000" },
 ];
