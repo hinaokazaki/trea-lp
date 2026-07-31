@@ -72,9 +72,9 @@ export default function GalleryDetail({ item, variant = "page" }: Props) {
         )}
 
         <div
-          className={`flex flex-col gap-3 ${isModal ? "" : "sm:flex-row"}`}
+          className={`flex flex-col w-full items-center gap-3 ${isModal ? "" : "sm:flex-row"}`}
         >
-          <Button href="/reservation" variant="primary">
+          <Button href="/reservation" className="w-full" variant="primary">
             このデザインで予約する
           </Button>
           <Button href="/gallery" variant="ghost">
