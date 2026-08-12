@@ -1,8 +1,9 @@
-import { Scissors, Home, Car } from "lucide-react";
+import { Home, Car } from "lucide-react";
+import NailPolishSparkleIcon from "@/components/common/NailPolishSparkleIcon";
 
 const features = [
   {
-    icon: <Scissors size={20} />,
+    icon: <NailPolishSparkleIcon size={20} />,
     title: "短い爪が得意",
     description:
       "爪を伸ばせなくても大丈夫。美しいフォルムで可愛さを引き出します。",

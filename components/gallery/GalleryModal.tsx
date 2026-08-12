@@ -42,7 +42,7 @@ export default function GalleryModal({ children }: Props) {
       />
 
       {/* モバイルは画面幅いっぱいのシート状、PCは中央のカード */}
-      <div className="relative w-full sm:max-w-2xl sm:mx-6 max-h-[92dvh] overflow-y-auto bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl">
+      <div className="relative w-full sm:max-w-100 sm:mx-6 max-h-[92dvh] overflow-y-auto bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl">
         <button
           onClick={close}
           aria-label="閉じる"

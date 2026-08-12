@@ -23,7 +23,7 @@ export default function GalleryDetail({ item, variant = "page" }: Props) {
     >
       {/* 作品画像 */}
       <div
-        className={`relative aspect-square overflow-hidden bg-[#EDEBF4] ${
+        className={`relative aspect-4/5 overflow-hidden bg-[#EDEBF4] ${
           isModal ? "w-full" : "rounded-xl"
         }`}
       >
@@ -71,8 +71,10 @@ export default function GalleryDetail({ item, variant = "page" }: Props) {
           </div>
         )}
 
-        <div className="flex flex-col sm:flex-row gap-3">
-          <Button href="/reservation" variant="primary">
+        <div
+          className={`flex flex-col w-full items-center gap-3 ${isModal ? "" : "sm:flex-row"}`}
+        >
+          <Button href="/reservation" className="w-full" variant="primary">
             このデザインで予約する
           </Button>
           <Button href="/gallery" variant="ghost">

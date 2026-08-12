@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Sparkles } from "lucide-react";
 
 export default function NameOrigin() {
@@ -8,13 +9,14 @@ export default function NameOrigin() {
         店名の由来
       </p>
       <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
-        <div className="text-center shrink-0 px-8 py-6 border border-[#D5D2E3] rounded-xl bg-[#EFEDF5]">
-          <p className="font-serif text-3xl font-medium tracking-[.14em] text-[#3A3560]">
-            TRE&apos;A
-          </p>
-          <p className="text-[11px] text-[#5D5786] tracking-[.08em] mt-1">
-            トレア
-          </p>
+        <div className="shrink-0 w-full max-w-xs md:w-72">
+          <Image
+            src="/images/concept/name-origin.webp"
+            alt="TRE'A（トレア）private nail salon"
+            width={1075}
+            height={650}
+            className="w-full h-auto rounded-xl border border-[#D5D2E3]"
+          />
         </div>
 
         <div className="flex flex-col gap-3">

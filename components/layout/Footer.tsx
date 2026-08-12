@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Camera } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import InstagramIcon from "@/components/common/InstagramIcon";
 
 const footerLinks = [
   { href: "/concept", label: "コンセプト" },
@@ -18,27 +19,16 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-3">
             <Image
-              src="/images/common/logo.webp"
+              src="/images/top/logo.webp"
               alt="TRE'A private nail salon"
-              width={140}
-              height={38}
+              width={130}
+              height={56}
             />
             <p className="text-xs text-[#6B6880] leading-relaxed">
               完全貸切・一席のみのプライベートネイルサロン
               <br />
               短い爪でも可愛く上品に。
             </p>
-            <div className="flex gap-3 mt-1">
-              <a
-                href="https://www.instagram.com/trea_nails_/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#8D8AA0] hover:text-[#833AB4] transition-colors"
-                aria-label="Instagram"
-              >
-                <Camera size={18} />
-              </a>
-            </div>
           </div>
 
           {/* Nav */}
@@ -62,14 +52,32 @@ export default function Footer() {
             <p className="text-xs text-[#6B6880]">
               ご予約：LINE / Instagram DM
             </p>
+            <div className="flex items-center gap-3 mt-1">
+              <Link
+                href="/reservation"
+                className="text-[#8D8AA0] hover:text-[#06C755] transition-colors"
+                aria-label="ご予約ページ（LINE予約のご案内）"
+              >
+                <MessageCircle size={24} />
+              </Link>
+              <a
+                href="https://www.instagram.com/trea_nails_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#8D8AA0] hover:text-[#833AB4] transition-colors"
+                aria-label="Instagram"
+              >
+                <InstagramIcon size={24} />
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="mt-8 pt-6 border-t border-[#E4E2EE] flex flex-col md:flex-row md:justify-between gap-2 text-xs text-[#8D8AA0]">
-          <Link href="#" className="hover:text-[#55527A]">
+          <Link href="/privacy" className="hover:text-[#55527A]">
             プライバシーポリシー
           </Link>
-          <span>© 2025 TRE&apos;A nails</span>
+          <span>© {new Date().getFullYear()} TRE&apos;A nails</span>
         </div>
       </div>
     </footer>

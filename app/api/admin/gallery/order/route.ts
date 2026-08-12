@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { revalidatePath } from "next/cache";
 import prisma from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth/server";
 import { validateOrderInput } from "@/lib/validation";
@@ -40,6 +41,10 @@ export async function PATCH(request: NextRequest) {
       prisma.galleryItem.update({ where: { id }, data: { sortOrder } })
     )
   );
+
+  // ギャラリー一覧の表示順を即時反映(トップの最新4件はcreatedAt順のため影響なしだが念のため)
+  revalidatePath("/");
+  revalidatePath("/gallery");
 
   return NextResponse.json({ ok: true });
 }

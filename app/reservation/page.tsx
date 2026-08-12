@@ -89,18 +89,17 @@ export default function ReservationPage() {
                       nailsのLINEを友達追加してください。
                     </p>
                     <div className="my-3 text-center">
-                      <div className="inline-block relative w-20 h-20 rounded-lg overflow-hidden border border-[#E4E2EE] bg-[#EDEBF4]">
+                      <div className="inline-block relative w-20 h-20 rounded-lg overflow-hidden border border-[#E4E2EE] bg-white">
                         <Image
-                          src="/images/reservation/line-qr.png"
-                          alt="LINE QRコード（仮画像 / PLACEHOLDER）"
+                          src="/images/reservation/line.png"
+                          alt="TRE'A nails LINE友だち追加QRコード"
                           fill
-                          className="object-cover"
+                          className="object-contain"
                         />
                       </div>
                       <p className="text-[10px] text-[#8D8AA0] mt-1">
                         lin.ee/RnMcmQl
                       </p>
-                      <p className="text-[9px] text-[#B4B2C4]">PLACEHOLDER</p>
                     </div>
                   </>
                 ),
@@ -134,8 +133,23 @@ export default function ReservationPage() {
                 title: "フォロー",
                 description: (
                   <>
-                    Instagramアカウント <strong>@trea_nails_</strong>{" "}
-                    をフォローしてください。
+                    <p>
+                      Instagramアカウント <strong>@trea_nails_</strong>{" "}
+                      をフォローしてください。
+                    </p>
+                    <div className="my-3 text-center">
+                      <div className="inline-block relative w-20 h-20 rounded-lg overflow-hidden border border-[#E4E2EE] bg-white">
+                        <Image
+                          src="/images/reservation/instagram.jpg"
+                          alt="TRE'A nails InstagramフォローQRコード"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <p className="text-[10px] text-[#8D8AA0] mt-1">
+                        @trea_nails_
+                      </p>
+                    </div>
                   </>
                 ),
               },
@@ -203,7 +217,7 @@ export default function ReservationPage() {
                 key={i}
                 className="flex gap-3 text-xs text-[#6B6880] leading-[1.75]"
               >
-                <span className="text-[#5D5786] text-sm shrink-0">✦</span>
+                <span className="text-[#5D5786] text-sm shrink-0">•</span>
                 <span>{note}</span>
               </div>
             ))}
@@ -215,7 +229,7 @@ export default function ReservationPage() {
       <section className="w-full border-t border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
         <div className="max-w-5xl mx-auto px-6 py-15 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <p className="font-serif text-lg font-medium text-[#312F55]">
-            皆さまにお会いできる日を楽しみにしております 😌
+            皆さまにお会いできる日を楽しみにしております
           </p>
           <div className="flex gap-3 flex-wrap shrink-0">
             <a

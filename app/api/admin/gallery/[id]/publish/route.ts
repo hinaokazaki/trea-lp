@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { revalidatePath } from "next/cache";
 import prisma from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth/server";
 
@@ -34,5 +35,11 @@ export async function PATCH(
     where: { id: params.id },
     data: { isPublished },
   });
+
+  // 公開ページに公開/非公開の切り替えを即時反映
+  revalidatePath("/");
+  revalidatePath("/gallery");
+  revalidatePath(`/gallery/${item.id}`);
+
   return NextResponse.json(item);
 }

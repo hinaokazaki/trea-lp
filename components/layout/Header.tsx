@@ -25,10 +25,10 @@ export default function Header() {
           className="text-base font-medium tracking-widest text-[#312F55] hover:text-[#5D5786] transition-colors"
         >
           <Image
-            src="/images/common/logo.webp"
+            src="/images/top/logo.webp"
             alt="TRE'A private nail salon"
-            width={117}
-            height={32}
+            width={93}
+            height={40}
             priority
           />
         </Link>
