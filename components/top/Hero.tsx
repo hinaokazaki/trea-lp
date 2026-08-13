@@ -36,7 +36,7 @@ export default function Hero() {
           </div>
 
           {/* Hero image */}
-          <div className="relative min-h-72 md:min-h-105 flex items-end justify-center md:justify-start overflow-hidden">
+          <div className="relative min-h-72 md:min-h-105 hidden md:flex items-end justify-center md:justify-start overflow-hidden">
             <div className="relative w-full h-full max-w-110">
               <Image
                 src="/images/top/hero-nail.webp"
