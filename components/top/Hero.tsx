@@ -30,7 +30,7 @@ export default function Hero() {
           </div>
 
           {/* Copy */}
-          <div className="flex flex-col justify-center gap-4 py-10">
+          <div className="flex flex-col justify-center gap-4 pt-3 pb-10 md:py-10">
             <Image
               src="/images/top/logo.webp"
               alt="TRE'A private nail salon"
