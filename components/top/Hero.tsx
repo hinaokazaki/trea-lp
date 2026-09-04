@@ -6,6 +6,29 @@ export default function Hero() {
     <section className="w-full border-b border-[#E4E2EE] bg-[url('/images/common/bg-marble.webp')] bg-cover bg-center">
       <div className="max-w-5xl mx-auto px-6">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 min-h-80">
+          {/* Mobile: logo + hero image side by side */}
+          <div className="flex md:hidden items-start">
+            <div className="w-1/2 flex justify-center pt-8">
+              <Image
+                src="/images/top/logo.webp"
+                alt="TRE'A private nail salon"
+                width={235}
+                height={101}
+                className="w-full max-w-40 h-auto"
+              />
+            </div>
+            <div className="relative w-1/2 h-36">
+              <Image
+                src="/images/top/hero-nail.webp"
+                alt="TRE'A nails の実際のネイルデザイン"
+                fill
+                className="object-contain object-top"
+                sizes="50vw"
+                priority
+              />
+            </div>
+          </div>
+
           {/* Copy */}
           <div className="flex flex-col justify-center gap-4 py-10">
             <Image
@@ -13,6 +36,7 @@ export default function Hero() {
               alt="TRE'A private nail salon"
               width={235}
               height={101}
+              className="hidden md:block"
             />
             <p className="text-[11px] text-[#5D5786] tracking-[.12em] font-medium">
               完全貸切一席サロン
@@ -36,7 +60,7 @@ export default function Hero() {
           </div>
 
           {/* Hero image */}
-          <div className="relative min-h-72 md:min-h-105 flex items-end justify-center md:justify-start overflow-hidden">
+          <div className="relative min-h-72 md:min-h-105 hidden md:flex items-end justify-center md:justify-start overflow-hidden">
             <div className="relative w-full h-full max-w-110">
               <Image
                 src="/images/top/hero-nail.webp"
