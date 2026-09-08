@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 min-h-80">
           {/* Mobile: logo + hero image side by side */}
           <div className="flex md:hidden items-start">
-            <div className="w-[30%] flex justify-center pt-8">
+            <div className="w-[40%] flex justify-center pt-8">
               <Image
                 src="/images/top/logo.webp"
                 alt="TRE'A private nail salon"
@@ -17,13 +17,13 @@ export default function Hero() {
                 className="w-full max-w-40 h-auto"
               />
             </div>
-            <div className="relative w-[70%] h-50">
+            <div className="relative w-[60%] h-43">
               <Image
                 src="/images/top/hero-nail.webp"
                 alt="TRE'A nails の実際のネイルデザイン"
                 fill
                 className="object-contain object-top"
-                sizes="70vw"
+                sizes="60vw"
                 priority
               />
             </div>
