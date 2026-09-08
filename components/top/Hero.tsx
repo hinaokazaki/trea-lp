@@ -17,12 +17,12 @@ export default function Hero() {
                 className="w-full max-w-40 h-auto"
               />
             </div>
-            <div className="relative w-[60%] h-43">
+            <div className="relative w-[60%] aspect-4/5">
               <Image
                 src="/images/top/hero-nail.webp"
                 alt="TRE'A nails の実際のネイルデザイン"
                 fill
-                className="object-contain object-top"
+                className="object-cover object-top"
                 sizes="60vw"
                 priority
               />
