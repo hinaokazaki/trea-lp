@@ -22,7 +22,7 @@ export default function Hero() {
                 src="/images/top/hero-nail.webp"
                 alt="TRE'A nails の実際のネイルデザイン"
                 fill
-                className="object-contain object-top"
+                className="object-contain object-top-right"
                 sizes="60vw"
                 priority
               />
