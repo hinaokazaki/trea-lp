@@ -17,7 +17,7 @@ export default function Hero() {
                 className="w-full max-w-40 h-auto"
               />
             </div>
-            <div className="relative w-[70%] h-36">
+            <div className="relative w-[70%] h-50">
               <Image
                 src="/images/top/hero-nail.webp"
                 alt="TRE'A nails の実際のネイルデザイン"
