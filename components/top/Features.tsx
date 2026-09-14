@@ -5,12 +5,15 @@ const features = [
   {
     icon: <NailPolishSparkleIcon size={20} />,
     title: "短い爪が得意",
-    description: ["爪を伸ばせなくても大丈夫。", "美しいフォルムで可愛さを引き出します。"],
+    description: [
+      "爪を伸ばせなくても大丈夫。",
+      "美しいフォルムで可愛さを引き出します。",
+    ],
   },
   {
     icon: <Home size={20} />,
     title: "完全貸切・一席のみ",
-    description: ["完全個室での施術のため、ゆったりと過ごせる空間です。"],
+    description: ["完全個室での施術のため、", "ゆったりと過ごせる空間です。"],
   },
   {
     icon: <Car size={20} />,
