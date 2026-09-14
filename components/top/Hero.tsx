@@ -7,8 +7,8 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto px-6">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 min-h-80">
           {/* Mobile: logo + hero image side by side */}
-          <div className="flex md:hidden items-start">
-            <div className="w-[30%] flex justify-center pt-8">
+          <div className="flex md:hidden items-center">
+            <div className="w-[40%] flex justify-center">
               <Image
                 src="/images/top/logo.webp"
                 alt="TRE'A private nail salon"
@@ -17,20 +17,20 @@ export default function Hero() {
                 className="w-full max-w-40 h-auto"
               />
             </div>
-            <div className="relative w-[70%] h-36">
+            <div className="relative w-[60%] h-43">
               <Image
                 src="/images/top/hero-nail.webp"
                 alt="TRE'A nails の実際のネイルデザイン"
                 fill
-                className="object-contain object-top"
-                sizes="70vw"
+                className="object-contain object-top-right"
+                sizes="60vw"
                 priority
               />
             </div>
           </div>
 
           {/* Copy */}
-          <div className="flex flex-col justify-center gap-4 pt-3 pb-10 md:py-10">
+          <div className="flex flex-col justify-center gap-4 pb-10 md:py-10">
             <Image
               src="/images/top/logo.webp"
               alt="TRE'A private nail salon"
@@ -38,7 +38,7 @@ export default function Hero() {
               height={101}
               className="hidden md:block"
             />
-            <p className="text-[11px] text-[#5D5786] tracking-[.12em] font-medium">
+            <p className="hidden md:block text-[11px] text-[#5D5786] tracking-[.12em] font-medium">
               完全貸切一席サロン
             </p>
             <h1 className="font-serif text-2xl font-medium leading-[1.6] text-[#312F55]">
