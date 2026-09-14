@@ -10,12 +10,12 @@ const features = [
   {
     icon: <Home size={20} />,
     title: "完全貸切・一席のみ",
-    description: ["他のお客様を気にせず、ゆったりと過ごせる空間です。"],
+    description: ["完全個室での施術のため、ゆったりと過ごせる空間です。"],
   },
   {
     icon: <Car size={20} />,
     title: "広い駐車場あり",
-    description: ["お車でのご来店も安心。ゆったりした駐車スペースをご用意。"],
+    description: ["ゆったりした駐車スペースをご用意しております。"],
   },
 ];
 
