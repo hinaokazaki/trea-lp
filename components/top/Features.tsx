@@ -5,18 +5,17 @@ const features = [
   {
     icon: <NailPolishSparkleIcon size={20} />,
     title: "短い爪が得意",
-    description:
-      "爪を伸ばせなくても大丈夫。美しいフォルムで可愛さを引き出します。",
+    description: ["爪を伸ばせなくても大丈夫。", "美しいフォルムで可愛さを引き出します。"],
   },
   {
     icon: <Home size={20} />,
     title: "完全貸切・一席のみ",
-    description: "他のお客様を気にせず、ゆったりと過ごせる空間です。",
+    description: ["完全個室での施術のため、ゆったりと過ごせる空間です。"],
   },
   {
     icon: <Car size={20} />,
     title: "広い駐車場あり",
-    description: "お車でのご来店も安心。ゆったりした駐車スペースをご用意。",
+    description: ["ゆったりした駐車スペースをご用意しております。"],
   },
 ];
 
@@ -26,7 +25,7 @@ export default function Features() {
       <div className="max-w-5xl mx-auto px-6 py-14">
         <div className="flex flex-col items-center mb-8">
           <p className="font-serif text-base font-medium text-[#312F55]">
-            TRE&apos;A NAILS について
+            TRE&apos;A について
           </p>
           <span className="w-8 h-px bg-[#9690AE] mt-3" />
         </div>
@@ -43,7 +42,11 @@ export default function Features() {
                 {f.title}
               </p>
               <p className="text-xs text-[#6B6880] leading-[1.75]">
-                {f.description}
+                {f.description.map((line, i) => (
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))}
               </p>
             </div>
           ))}
